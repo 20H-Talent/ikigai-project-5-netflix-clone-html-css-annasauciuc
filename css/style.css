@@ -1,0 +1,243 @@
+/********** General style ********/
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+html.debug {
+    background: transparent url(./../00-home.jpg) no-repeat top left;
+    background-size: 100%;
+}
+
+body {
+    font-family: Helvetica;
+    color: white;
+    background-color: #141414;
+    opacity: 0.8;
+}
+
+h1 {
+    text-transform: uppercase;
+    /* margin-left: 58px; */
+    /* margin-bottom: 0;  */
+    padding-top: 4px;
+    height: 24px;
+    width: 203px;
+    color: #FFFFFF;
+    font-family: Helvetica;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.16px;
+    line-height: 24px;
+}
+
+h2 {
+    /* margin-left: 58px; */
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.16px;
+    line-height: 24px;
+}
+
+h3 {
+    margin-top: 20px;
+    height: 26px;
+    width: 225px;
+    color: #FFFFFF;
+    font-family: Helvetica;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 0.22px;
+    line-height: 26px;
+}
+
+p {
+    height: 75px;
+    width: 485px;
+    color: #FFFFFF;
+    font-family: Helvetica;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 0.2px;
+    line-height: 25px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+/******* Nav style ********/
+
+.first-line {
+    margin-left: 58px;
+    /* margin-left: 40px; */
+    padding-top: 22px;
+    display: flex;
+    flex-direction: row;
+}
+
+.second-line {
+    margin-left: 60px;
+    margin-top: 14%;
+    width: 70%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.top-nav {
+    margin-left: 40px;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    font-weight: bold;
+}
+
+nav a {
+    margin: 5px;
+    font-family: Helvetica;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    line-height: 17px;
+}
+
+.search {
+    margin-left:auto;
+    /* position: absolute;
+    bottom: 0;
+    right: 58px;
+    top: 20px; */
+}
+
+button {
+    margin-top: 20px;
+    height: 41px;
+    width: 129px;
+    border-radius: 3px;
+    background-color: rgba(51, 51, 51, 0.4);
+    border: none;
+    color: #FFFFFF;
+    font-family: Helvetica;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    line-height: 19px;
+}
+
+.btn-2 img {
+    margin-top: 3px;
+    height: 16px;
+    width: 16px;
+}
+
+.btn img {
+    margin-right: 10px;
+    height: 17px;
+    width: 15.1px;
+}
+
+.btn {
+    padding-right: 11px;
+    margin-right: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+    line-height: 19px;
+}
+
+.btn-2 {
+    margin-right: 10px;
+    padding-right: 11px;
+    margin-right: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+    line-height: 19px;
+}
+
+/* Header */
+
+header {
+    height: 810.44px;
+    width: 100%;
+    background: url("./../movie-images/background.svg") no-repeat top center;
+    background-size: cover;
+    overflow: hidden;
+    /* padding-bottom: 250px; */
+    margin-bottom: -250px;
+}
+
+/* Container */
+
+.row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+    overflow: scroll;
+    overflow: scroll;
+    overflow-x: visible;
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+
+.main {
+    margin-top: 46px;
+    margin-left: 58px;
+    overflow-x: auto;
+}
+
+.main img {
+    margin-right: 5px;
+}
+
+.main::-webkit-scrollbar {
+    display: none;
+}
+
+.img-rows {
+    /* height: 121.69px;
+    width: 216px; */
+    margin-right: 5px;
+    /* overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: hidden; */
+}
+
+.originals-container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 63px;
+    overflow-x: auto;
+}
+
+/* a {
+    font-size: 2em;
+    transition: all .3s ease-out;
+  }
+  
+  a:hover {
+    transform: translate(0, -5px);
+  } 
+    */
+
+progress[value] {
+    height: 4px;
+    width: 132px;
+    background-color: red;
+    margin-left: 45px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+progress::-webkit-progress-value {
+    background-color: red;
+}
