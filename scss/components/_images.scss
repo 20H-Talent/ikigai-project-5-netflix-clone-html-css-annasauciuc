@@ -17,8 +17,7 @@
 .image-rows {
   margin-right: 5px;
 }
-.main {
-}
+
 .row {
   @include flexy($dir: row);
   margin-left: 60px;
