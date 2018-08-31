@@ -18,7 +18,6 @@
   margin-right: 5px;
 }
 .main {
-  background-color: red;
 }
 .row {
   @include flexy($dir: row);
