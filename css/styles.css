@@ -318,7 +318,6 @@ body {
   background-color: #141414;
   width: 100%; }
 
-/* Link Styles */
 html.debug {
   background: transparent url(./../../movie-images/00-home.jpg) no-repeat top left;
   background-size: 100%; }
@@ -330,15 +329,6 @@ a {
   color: white; }
   a:hover {
     color: darkblue; }
-
-/* Section Styles */
-header {
-  background: url("./../movie-images/background.svg") no-repeat top center;
-  background-size: cover;
-  overflow: hidden;
-  height: 810.44px;
-  width: 100%;
-  margin-bottom: -250px; }
 
 .container {
   width: 100%; }
@@ -496,5 +486,37 @@ progress::-moz-progress-bar {
     font-size: 14px;
     letter-spacing: 0.5px;
     line-height: 17px; }
+
+a.social {
+  display: inline-block;
+  text-indent: -9999px;
+  height: 26px;
+  width: 26px;
+  background-size: 60px 60px;
+  opacity: .9;
+  transition: all .3s; }
+
+.social:hover {
+  transform: scale(1.2); }
+
+a.facebook {
+  background-image: url(./../../icons.svg/facebook.svg); }
+
+a.instagram {
+  background-image: url(./../../icons.svg/instagram.svg); }
+
+a.twitter {
+  background-image: url(./../../icons.svg/twitter.svg); }
+
+a.youtube {
+  background-image: url(./../../icons.svg/youtube-play.svg); }
+
+header {
+  background: url("./../../movie-images/background.svg") no-repeat top center;
+  background-size: cover;
+  overflow: hidden;
+  height: 810.44px;
+  width: 100%;
+  margin-bottom: -250px; }
 
 /*# sourceMappingURL=styles.css.map */
