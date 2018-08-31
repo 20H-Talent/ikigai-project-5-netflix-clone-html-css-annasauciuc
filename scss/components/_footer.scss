@@ -1,6 +1,6 @@
 a.social {
     display: inline-block;
-    text-indent: -9999px;
+    // text-indent: -9999px;
     height: 26px;
     width: 26px;
     background-size: 60px 60px;
@@ -12,18 +12,15 @@ a.social {
     transform: scale(1.2)
 }
 
-a.facebook {
-    background-image: url(./../../icons.svg/facebook.svg);
-}
-
-a.instagram {
-    background-image: url(./../../icons.svg/instagram.svg);
-}
-
-a.twitter {
-    background-image: url(./../../icons.svg/twitter.svg);
-}
-
-a.youtube {
-    background-image: url(./../../icons.svg/youtube-play.svg);
-}
+// a.facebook {
+//     background-image: url(./../icons/facebook.svg);
+// }
+// a.instagram {
+//     background-image: url(./../../icons.svg/instagram.svg);
+// }
+// a.twitter {
+//     background-image: url(./../../icons.svg/twitter.svg);
+// }
+// a.youtube {
+//     background-image: url(./../../icons.svg/youtube-play.svg);
+// }

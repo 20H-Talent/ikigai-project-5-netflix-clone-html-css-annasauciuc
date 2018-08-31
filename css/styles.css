@@ -319,7 +319,7 @@ body {
   width: 100%; }
 
 html.debug {
-  background: transparent url(./../../movie-images/00-home.jpg) no-repeat top left;
+  background: transparent url("./../movie-images/00-home.jpg") no-repeat top left;
   background-size: 100%; }
   html.debug body {
     opacity: 0.7; }
@@ -489,7 +489,6 @@ progress::-moz-progress-bar {
 
 a.social {
   display: inline-block;
-  text-indent: -9999px;
   height: 26px;
   width: 26px;
   background-size: 60px 60px;
@@ -499,20 +498,8 @@ a.social {
 .social:hover {
   transform: scale(1.2); }
 
-a.facebook {
-  background-image: url(./../../icons.svg/facebook.svg); }
-
-a.instagram {
-  background-image: url(./../../icons.svg/instagram.svg); }
-
-a.twitter {
-  background-image: url(./../../icons.svg/twitter.svg); }
-
-a.youtube {
-  background-image: url(./../../icons.svg/youtube-play.svg); }
-
 header {
-  background: url("./../../movie-images/background.svg") no-repeat top center;
+  background: url("./../movie-images/background.svg") no-repeat top center;
   background-size: cover;
   overflow: hidden;
   height: 810.44px;
