@@ -5,9 +5,9 @@
 body {
   margin: 0;
   padding: 0;
-  color: #ffffff;
-  font-family: Helvetica;
-  background-color: #141414;
+  color: $text-color;
+  font-family: $font-family;
+  background-color: $background-body;
 }
 
 /* Link Styles */
@@ -37,6 +37,27 @@ header {
   height: 810.44px;
   width: 100%;
 }
-.second-line {
-  margin-left: 61px;
+
+.container {
+  width: 100%;
+}
+p {
+  margin: 0 0 0 59px;
+  height: 75px;
+  width: 485px;
+  color: #ffffff;
+  font-family: Helvetica;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 0.2px;
+  line-height: 25px;
+}
+h3 {
+  margin: 0 0 5px 59px;
+  height: 26px;
+  width: 225px;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 0.22px;
+  line-height: 26px;
 }

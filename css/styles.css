@@ -338,31 +338,59 @@ header {
   height: 810.44px;
   width: 100%; }
 
-.second-line {
-  margin-left: 61px; }
+.container {
+  width: 100%; }
 
-button {
-  border: none;
-  margin-right: 20px;
-  height: 32px;
-  width: 129px;
-  border-radius: 3px;
-  background-color: rgba(51, 51, 51, 0.4);
+p {
+  margin: 0 0 0 59px;
+  height: 75px;
+  width: 485px;
   color: #ffffff;
-  font-size: 18px;
+  font-family: Helvetica;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 0.2px;
+  line-height: 25px; }
+
+h3 {
+  margin: 0 0 5px 59px;
+  height: 26px;
+  width: 225px;
+  font-size: 22px;
   font-weight: bold;
-  letter-spacing: 1.2px;
-  line-height: 19px; }
-  button .play {
-    margin-right: 10px; }
-  button .plus {
-    padding-top: 8px; }
+  letter-spacing: 0.22px;
+  line-height: 26px; }
+
+.h-buttons {
+  margin-left: 58px;
+  margin-bottom: 16px; }
+  .h-buttons .btn-2 {
+    margin-left: 10px;
+    height: 41px;
+    width: 154px; }
+  .h-buttons button {
+    padding: 0;
+    border: none;
+    height: 41px;
+    width: 129px;
+    border-radius: 3px;
+    background-color: rgba(51, 51, 51, 0.4);
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+    line-height: 19px; }
+    .h-buttons button .play {
+      margin-right: 10px; }
+    .h-buttons button .plus {
+      padding-right: 5px; }
 
 .image-header {
   height: 74.31px;
   width: 459.12px;
   margin-bottom: 28px;
-  margin-top: 204px; }
+  margin-left: 61px;
+  margin-top: 205px; }
 
 nav ul {
   display: flex;
@@ -382,6 +410,7 @@ nav ul {
     letter-spacing: 0.5px;
     line-height: 17px; }
   nav ul .active {
-    margin-left: 45px; }
+    margin-left: 45px;
+    font-weight: bold; }
 
 /*# sourceMappingURL=styles.css.map */

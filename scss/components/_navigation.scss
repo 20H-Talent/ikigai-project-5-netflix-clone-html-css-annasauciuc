@@ -9,7 +9,7 @@ nav ul {
   }
   li {
     margin-right: 16px;
-    color: #ffffff;
+    color:$text-color;
     font-family: Helvetica;
     font-size: 14px;
     font-weight: bold;
@@ -18,5 +18,6 @@ nav ul {
   }
   .active {
     margin-left: 45px;
+    font-weight: bold;
   }
 }
