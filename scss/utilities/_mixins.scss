@@ -1,9 +1,10 @@
-@mixin flexy($disp: flex, $dir: null, $wrap: null, $just: null, $align: null) {
+@mixin flexy($disp: flex, $dir: null, $wrap: null, $just: null, $align: null, $align-s:null) {
   display: $disp;
   flex-direction: $dir;
   flex-wrap: $wrap;
   justify-content: $just;
   align-items: $align;
+  align-self: $align-s;
 }
 
 // Media Queries

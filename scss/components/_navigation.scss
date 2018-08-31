@@ -1,23 +1,31 @@
-nav ul {
-  @include flexy($dir: row, $align: center);
+.top-nav  {
+  @include flexy($dir: row);
   margin-left: 58px;
-  margin-top: 21px;
-
-  form {
+  margin-top: 22px;
+  
+ nav {
+  @include flexy($dir: row);
+}
+  ul{
+margin-left:45px;
+    @include flexy($dir: row,$align: center, $align-s:end);
+  }
+form {
+  @include flexy($dir: row);
     margin-left: auto;
-    margin-right: 61px;
+  
   }
   li {
-    margin-right: 16px;
+    // margin-right: 16px;
     color:$text-color;
     font-family: Helvetica;
     font-size: 14px;
-    font-weight: bold;
+    // font-weight: bold;
     letter-spacing: 0.5px;
     line-height: 17px;
   }
-  .active {
-    margin-left: 45px;
-    font-weight: bold;
-  }
+  // .active {
+  //   margin-right:19px;
+  //   font-weight: bold;
+  // }
 }

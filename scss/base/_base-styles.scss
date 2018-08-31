@@ -1,111 +1,125 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  color: $text-color;
-  font-family: $font-family;
-  background-color: $background-body;
+    margin: 0;
+    padding: 0;
+    color: $text-color;
+    font-family: $font-family;
+    background-color: $background-body;
+    width: 100%;
 }
+
 
 /* Link Styles */
 
 html.debug {
-  background: transparent url(./../00-home.jpg) no-repeat top left;
-  background-size: 100%;
+    background: transparent url(./../../movie-images/00-home.jpg) no-repeat top left;
+    background-size: 100%;
+    body {
+        opacity: 0.7;
+    }
+}
 
-  body {
-    opacity: 0.7;
-  }
-}
 a {
-  text-decoration: none;
-  color: white;
-  &:hover {
-    color: darkblue;
-  }
+    text-decoration: none;
+    color: white;
+    &:hover {
+        color: darkblue;
+    }
 }
+
 
 /* Section Styles */
 
 header {
-  background: url("./../movie-images/background.svg") no-repeat top center;
-  background-size: cover;
-  overflow: hidden;
-  height: 810.44px;
-  width: 100%;
-  margin-bottom: -250px;
+    background: url("./../movie-images/background.svg") no-repeat top center;
+    background-size: cover;
+    overflow: hidden;
+    height: 810.44px;
+    width: 100%;
+    margin-bottom: -250px;
 }
 
 .container {
-  width: 100%;
+    width: 100%;
 }
+
 p {
-  margin: 0 0 0 59px;
-  height: 75px;
-  width: 485px;
-  color: #ffffff;
-  font-family: Helvetica;
-  font-size: 20px;
-  font-weight: 300;
-  letter-spacing: 0.2px;
-  line-height: 25px;
+    margin: 0 0 0 59px;
+    height: 75px;
+    width: 485px;
+    color: #ffffff;
+    font-family: Helvetica;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 0.2px;
+    line-height: 25px;
 }
+
 h3 {
-  margin: 0 0 5px 59px;
-  height: 26px;
-  width: 225px;
-  font-size: 22px;
-  font-weight: bold;
-  letter-spacing: 0.22px;
-  line-height: 26px;
+    margin: 0 0 0 59px;
+    height: 26px;
+    width: 225px;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 0.22px;
+    line-height: 26px;
 }
+
 h1 {
-  margin-left:58px;
-  margin-top: 62px;
-  margin-bottom: 8px;
-  height: 24px;
-  width: 203px;
-  color: #ffffff;
-  font-family: Helvetica;
-  font-size: 20px;
-  font-weight: bold;
-  letter-spacing: 0.16px;
-  line-height: 24px;
+    margin-left: 58px;
+    margin-top: 62px;
+    margin-bottom: 8px;
+    height: 24px;
+    width: 203px;
+    color: #ffffff;
+    font-family: Helvetica;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.16px;
+    line-height: 24px;
 }
+
 h2 {
-  margin-bottom:10px;
-  margin-left: 58px;
-  margin-top: 0;
-  height: 24px;
-  width: 185px;
-  color: #ffffff;
-  font-family: Helvetica;
-  font-size: 20px;
-  font-weight: bold;
-  letter-spacing: 0.16px;
-  line-height: 24px;
+    margin-bottom: 10px;
+    margin-left: 58px;
+    margin-top: 0;
+    height: 24px;
+    width: 185px;
+    color: #ffffff;
+    font-family: Helvetica;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.16px;
+    line-height: 24px;
 }
+
+.first-line {
+    margin-bottom: 204px;
+}
+
 progress[value] {
-  /* Reset the default appearance */
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border: none;
-  height: 4px;
-  width: 132px;
-  margin-left: 44px;
+    /* Reset the default appearance */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    height: 4px;
+    width: 132px;
+    margin-left: 44px;
 }
+
 progress::-webkit-progress-value {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  color: red;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    color: red;
 }
+
 progress::-moz-progress-bar {
-  color: red;
+    color: red;
 }
 
 // progress-bar[value] {
@@ -118,7 +132,6 @@ progress::-moz-progress-bar {
 // progress[value]::-webkit-progress-bar {
 //   background-color:#606060;
 //   color:red;
-
 // }
 // progress {
 //   -webkit-appearance: none;
@@ -133,7 +146,6 @@ progress::-moz-progress-bar {
 //   progress::-webkit-progress-value {
 //     background-color: red;
 //   }
-
 //   progress::-moz-progress-bar {
 //     background-color: red;
 //   }
@@ -150,6 +162,5 @@ progress::-moz-progress-bar {
 //   -webkit-appearance: none;
 //      -moz-appearance: none;
 //           appearance: none;
-
 //   /* Get rid of default border in Firefox. */
 //   border: none;
