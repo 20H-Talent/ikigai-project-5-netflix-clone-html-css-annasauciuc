@@ -36,6 +36,7 @@ header {
   overflow: hidden;
   height: 810.44px;
   width: 100%;
+  margin-bottom: -250px;
 }
 
 .container {
@@ -61,3 +62,94 @@ h3 {
   letter-spacing: 0.22px;
   line-height: 26px;
 }
+h1 {
+  margin-left:58px;
+  margin-top: 62px;
+  margin-bottom: 8px;
+  height: 24px;
+  width: 203px;
+  color: #ffffff;
+  font-family: Helvetica;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0.16px;
+  line-height: 24px;
+}
+h2 {
+  margin-bottom:10px;
+  margin-left: 58px;
+  margin-top: 0;
+  height: 24px;
+  width: 185px;
+  color: #ffffff;
+  font-family: Helvetica;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0.16px;
+  line-height: 24px;
+}
+progress[value] {
+  /* Reset the default appearance */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  height: 4px;
+  width: 132px;
+  margin-left: 44px;
+}
+progress::-webkit-progress-value {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  color: red;
+}
+progress::-moz-progress-bar {
+  color: red;
+}
+
+// progress-bar[value] {
+//   height: 4px;
+//   width: 132px;
+//   -moz-appearance: none;
+//   -webkit-appearance: none;
+//    appearance: none;
+// }
+// progress[value]::-webkit-progress-bar {
+//   background-color:#606060;
+//   color:red;
+
+// }
+// progress {
+//   -webkit-appearance: none;
+//
+//   appearance: none;
+//
+//   background-color: ;
+//   margin-left: 44px;
+//   progress::-webkit-progress-bar {
+//     background-color: grey;
+//   }
+//   progress::-webkit-progress-value {
+//     background-color: red;
+//   }
+
+//   progress::-moz-progress-bar {
+//     background-color: red;
+//   }
+// }
+// // progress::-webkit-progress-value
+// para el color de la barra interna
+// Esta de aqui es para mozilla --> progress::-moz-progress-bar
+// a progress y progress[value] le tienes que aplicar esto
+// -webkit-appearance: none;
+//  -moz-appearance: none;
+//  appearance: none;
+//  progress{
+//   /* Reset the default appearance */
+//   -webkit-appearance: none;
+//      -moz-appearance: none;
+//           appearance: none;
+
+//   /* Get rid of default border in Firefox. */
+//   border: none;

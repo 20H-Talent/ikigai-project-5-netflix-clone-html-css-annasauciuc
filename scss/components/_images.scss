@@ -5,3 +5,28 @@
   margin-left: 61px;
   margin-top: 205px;
 }
+.originals-container {
+  @include flexy($dir: row);
+  overflow-x: hidden;
+  overflow-y: visible;
+  margin-bottom: 60px;
+  margin-left: 58px;
+  overflow: scroll;
+  width: 100%;
+}
+.image-rows {
+  margin-right: 5px;
+}
+.main {
+}
+.row {
+  @include flexy($dir: row);
+  margin-left: 60px;
+  margin-bottom: 28px;
+  overflow: scroll;
+  width: 100%;
+  image {
+    height: 121.69px;
+    width: 216px;
+  }
+}
