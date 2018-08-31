@@ -338,6 +338,32 @@ header {
   height: 810.44px;
   width: 100%; }
 
+.second-line {
+  margin-left: 61px; }
+
+button {
+  border: none;
+  margin-right: 20px;
+  height: 32px;
+  width: 129px;
+  border-radius: 3px;
+  background-color: rgba(51, 51, 51, 0.4);
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+  line-height: 19px; }
+  button .play {
+    margin-right: 10px; }
+  button .plus {
+    padding-top: 8px; }
+
+.image-header {
+  height: 74.31px;
+  width: 459.12px;
+  margin-bottom: 28px;
+  margin-top: 204px; }
+
 nav ul {
   display: flex;
   flex-direction: row;

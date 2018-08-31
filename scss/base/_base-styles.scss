@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  padding: 0;;
+  padding: 0;
   color: #ffffff;
   font-family: Helvetica;
   background-color: #141414;
@@ -28,7 +28,6 @@ a {
   }
 }
 
-
 /* Section Styles */
 
 header {
@@ -36,5 +35,8 @@ header {
   background-size: cover;
   overflow: hidden;
   height: 810.44px;
-  width:100%;
+  width: 100%;
+}
+.second-line {
+  margin-left: 61px;
 }
