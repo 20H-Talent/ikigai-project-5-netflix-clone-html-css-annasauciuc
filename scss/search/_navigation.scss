@@ -1,0 +1,35 @@
+.top-nav {
+    @include flexy($dir: row);
+    // position: -webkit-sticky;
+    // /* Safari */
+    // position: sticky;
+    // top: 0;
+    margin-left: 58px;
+    margin-top: 21px;
+    .active {
+        font-weight: bold;
+    }
+    #nav-item4 {
+        margin-right: 15px;
+    }
+    nav {
+        @include flexy($dir: row);
+    }
+    ul {
+        margin-left: 45px;
+        @include flexy($dir: row, $align: center);
+    }
+    li {
+        margin-right: 18px;
+        color: $text-color;
+        font-family: Helvetica;
+        font-size: 14px;
+        letter-spacing: 0.5px;
+        line-height: 17px;
+    }
+    form {
+        position: absolute;
+        right: 63px;
+        top: 24px;
+    }
+}

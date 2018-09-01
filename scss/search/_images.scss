@@ -1,0 +1,17 @@
+.image-rows {
+    margin-right: 5px;
+}
+
+.row {
+    @include flexy($dir: row);
+    margin-left: 60px;
+    margin-bottom: 35px;
+    overflow-x: hidden;
+    /* Hide horizontal scrollbar */
+    overflow-y: scroll;
+    width: 100%;
+    image {
+        height: 121.69px;
+        width: 216px;
+    }
+}

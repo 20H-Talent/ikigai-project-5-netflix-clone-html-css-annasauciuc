@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="debug">
 
 <head>
     <title>Netflix</title>
@@ -10,19 +10,737 @@
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Netflix" />
     <meta property="og:description" content="Cinema comes in your home" />
-    <meta property="og:image" content="http://static01.nyt.com/images/2015/02/19/arts/international/19iht-btnumbers19A/19iht-btnumbers19A-facebookJumbo-v2.jpg"
-    />
+    <meta property="og:image" content="http://static01.nyt.com/images/2015/02/19/arts/international/19iht-btnumbers19A/19iht-btnumbers19A-facebookJumbo-v2.jpg" />
+    <link rel="stylesheet" href="./css/search.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
 </head>
 
 <body>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXX-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
 
         gtag('config', 'UA-XXXXXXXX-1');
     </script>
+    <div class="container">
+        <header>
+            <div class="first-line">
+                <div class="top-nav">
+                    <nav>
+
+                        <a href="#logo"> <img class="logo" src="icons/netflix-logo.svg" alt="Netflix
+                                    logo"></a>
+                        <ul>
+                            <li id="nav-item1"> <a class="active" href="#home">Home</a></li>
+                            <li id="nav-item2"> <a href="#about">TV Shows</a></li>
+                            <li id="nav-item3"> <a href="#movies">Movies</a></li>
+                            <li id="nav-item4"> <a id="nav-item3" class="recently-added" href="#recently-added">Recently Added</a></li>
+                            <li id="nav-item5"> <a href="#my-list">My List</a></li>
+                            <form action="" class="nav-forms">
+                                <label for="search"> <img
+                                            src="icons/lupa.svg"></label>
+                                <!-- <input type="text" name="search" id="search" placeholder="Title, people, genres"> -->
+                            </form>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+            <div class="scroll-3 row">
+
+                <div class="trending">
+                    <a href="videodetail.html"> <img class="image-rows" src="movie-images/richylittle.svg" alt="image of
+                                rick and morty movie"></a>
+                    <progress max="100" value="0"></progress>
+                </div>
+                <div class="trending">
+                    <a href="videodetail.html"> <img class="image-rows" src="movie-images/cosmoslittle.svg" alt="image
+                                of cosmos movie"></a>
+                    <progress max="100" value="0"></progress>
+                </div>
+                <div class="trending">
+                    <a href="videodetail.html"> <img class="image-rows" src="movie-images/magiclittle.svg" alt="image of
+                                humans movie movie"></a>
+                    <progress max="100" value="0"></progress>
+                </div>
+                <div class="trending">
+                    <a href="videodetail.html"> <img class="image-rows" src="movie-images/strange.svg" alt="image of
+                                cosmos movie"></a>
+                    <progress max="100" value="0"></progress>
+                </div>
+                <div class="trending">
+                    <a href="videodetail.html"> <img class="image-rows" src="movie-images/modernlittle.svg" alt="image
+                                of modern family movie"></a>
+                    <progress max="100" value="0"></progress>
+                </div>
+                <div class="trending">
+                    <a href="videodetail.html"> <img class="image-rows" src="movie-images/richylittle.svg" alt="image of
+                                rick and morty movie"></a>
+                    <progress max="100" value="0"></progress>
+                </div>
+                <div class="trending">
+                    <a href="videodetail.html"> <img class="image-rows" src="movie-images/fishlittle.svg" alt="image of
+                                big fish and begonia movie"></a>
+                    <progress max="100" value="0"></progress>
+                </div>
+                <div class="trending">
+                    <a href="videodetail.html"> <img class="image-rows" src="movie-images/richylittle.svg" alt="image of
+                                rick and morty movie"></a>
+                    <progress max="100" value="0"></progress>
+                </div>
+                <div class="trending">
+                    <a href="videodetail.html"> <img class="image-rows" src="movie-images/cosmoslittle.svg" alt="image
+                                of cosmos movie"></a>
+                    <progress max="100" value="0"></progress>
+                </div>
+                <div class="trending">
+                    <a href="videodetail.html"> <img class="image-rows" src="movie-images/magiclittle.svg" alt="image of
+                                humans movie movie"></a>
+                    <progress max="100" value="0"></progress>
+                </div>
+                <div class="trending">
+                    <a href="videodetail.html"> <img class="image-rows" src="movie-images/strange.svg" alt="image of
+                                cosmos movie"></a>
+                    <progress max="100" value="0"></progress>
+                </div>
+                <div class="trending">
+                    <a href="videodetail.html"> <img class="image-rows" src="movie-images/modernlittle.svg" alt="image
+                                of modern family movie"></a>
+                    <progress max="100" value="0"></progress>
+                </div>
+                <div class="trending">
+                    <a href="videodetail.html"> <img class="image-rows" src="movie-images/richylittle.svg" alt="image of
+                                rick and morty movie"></a>
+                    <progress max="100" value="0"></progress>
+                </div>
+                <div class="trending">
+                    <a href="videodetail.html"> <img class="image-rows" src="movie-images/fishlittle.svg" alt="image of
+                                big fish and begonia movie"></a>
+                    <progress max="100" value="0"></progress>
+                </div>
+
+
+            </div>
+
+            <div class="scroll-4 row">
+
+                <div class="sci--fi">
+                    <a href="videodetail.html"> <img class="image-rows" src="movie-images/cosmoslittle.svg" alt="image
+                                of cosmos movie"></a>
+                    <progress max="100" value="0"></progress>
+                </div>
+                <div class="sci--fi">
+                    <a href="videodetail.html"> <img class="image-rows" src="movie-images/richylittle.svg" alt="image of
+                                rick and morty movie"></a>
+                    <progress max="100" value="0"></progress>
+                </div>
+                <div class="sci--fi">
+                    <a href="videodetail.html"> <img class="image-rows" src="movie-images/modernlittle.svg" alt="image
+                                of modern family movie"></a>
+                    <progress max="100" value="0"></progress>
+                </div>
+                <div class="sci--fi">
+                    <a href="videodetail.html"> <img class="image-rows" src="movie-images/strange.svg" alt="image of
+                                cosmos movie"></a>
+                    <progress max="100" value="0"></progress>
+                </div>
+                <div class="sci--fi">
+                    <a href="videodetail.html"> <img class="image-rows" src="movie-images/modernlittle.svg" alt="image
+                                of modern family movie"></a>
+                    <progress max="100" value="0"></progress>
+                </div>
+                <div class="sci--fi">
+                    <a href="videodetail.html"> <img class="image-rows" src="movie-images/magiclittle.svg" alt="image of
+                                humans movie movie"></a>
+                    <progress max="100" value="0"></progress>
+                </div>
+                <div class="sci--fi">
+                    <a href="videodetail.html"> <img class="image-rows" src="movie-images/fishlittle.svg" alt="image of
+                                big fish and begonia movie"></a>
+                    <progress max="100" value="0"></progress>
+                </div>
+                <div class="sci--fi">
+                    <a href="videodetail.html"> <img class="image-rows" src="movie-images/cosmoslittle.svg" alt="image
+                                of cosmos movie"></a>
+                    <progress max="100" value="0"></progress>
+                </div>
+                <div class="sci--fi">
+                    <a href="videodetail.html"> <img class="image-rows" src="movie-images/richylittle.svg" alt="image of
+                                rick and morty movie"></a>
+                    <progress max="100" value="0"></progress>
+                </div>
+                <div class="sci--fi">
+                    <a href="videodetail.html"> <img class="image-rows" src="movie-images/modernlittle.svg" alt="image
+                                of modern family movie"></a>
+                    <progress max="100" value="0"></progress>
+                </div>
+                <div class="sci--fi">
+                    <a href="videodetail.html"> <img class="image-rows" src="movie-images/strange.svg" alt="image of
+                                cosmos movie"></a>
+                    <progress max="100" value="0"></progress>
+                </div>
+                <div class="sci--fi">
+                    <a href="videodetail.html"> <img class="image-rows" src="movie-images/modernlittle.svg" alt="image
+                                of modern family movie"></a>
+                    <progress max="100" value="0"></progress>
+                </div>
+                <div class="sci--fi">
+                    <a href="videodetail.html"> <img class="image-rows" src="movie-images/magiclittle.svg" alt="image of
+                                humans movie movie"></a>
+                    <progress max="100" value="0"></progress>
+                </div>
+                <div class="sci--fi">
+                    <a href="videodetail.html"> <img class="image-rows" src="movie-images/fishlittle.svg" alt="image of
+                                big fish and begonia movie"></a>
+                    <progress max="100" value="0"></progress>
+                </div>
+
+            </div>
+
+            <div class="scroll-5 row">
+
+                <div class="animate">
+                    <a href="videodetail.html"> <img class="image-rows" src="movie-images/magiclittle.svg" alt="image of
+                                cosmos movie"></a>
+                    <progress max="100" value="0"></progress>
+                </div>
+                <div class="animate">
+                    <a href="videodetail.html"> <img class="image-rows" src="movie-images/modernlittle.svg" alt="image
+                                of modern family movie"></a>
+                    <progress max="100" value="0"></progress>
+                </div>
+                <div class="animate">
+                    <a href="videodetail.html"> <img class="image-rows" src="movie-images/magiclittle.svg" alt="image of
+                                humans movie movie"></a>
+                    <progress max="100" value="0"></progress>
+                </div>
+                <div class="animate">
+                    <a href="videodetail.html"> <img class="image-rows" src="movie-images/richylittle.svg" alt="image of
+                                rick and morty movie"></a>
+                    <progress max="100" value="0"></progress>
+                </div>
+                <div class="animate">
+                    <a href="videodetail.html"> <img class="image-rows" src="movie-images/cosmoslittle.svg" alt="image
+                                of cosmos movie"></a>
+                    <progress max="100" value="0"></progress>
+                </div>
+                <div class="animate">
+                    <a href="videodetail.html"> <img class="image-rows" src="movie-images/richylittle.svg" alt="image of
+                                rick and morty movie"></a>
+                    <progress max="100" value="0"></progress>
+                </div>
+                <div class="animate">
+                    <a href="videodetail.html"> <img class="image-rows" src="movie-images/fishlittle.svg" alt="image of
+                                big fish and begonia movie"></a>
+                    <progress max="100" value="0"></progress>
+                </div>
+                <div class="animate">
+                    <a href="videodetail.html"> <img class="image-rows" src="movie-images/magiclittle.svg" alt="image of
+                                cosmos movie"></a>
+                    <progress max="100" value="0"></progress>
+                </div>
+                <div class="animate">
+                    <a href="videodetail.html"> <img class="image-rows" src="movie-images/modernlittle.svg" alt="image
+                                of modern family movie"></a>
+                    <progress max="100" value="0"></progress>
+                </div>
+                <div class="animate">
+                    <a href="videodetail.html"> <img class="image-rows" src="movie-images/magiclittle.svg" alt="image of
+                                humans movie movie"></a>
+                    <progress max="100" value="0"></progress>
+                </div>
+                <div class="animate">
+                    <a href="videodetail.html"> <img class="image-rows" src="movie-images/richylittle.svg" alt="image of
+                                rick and morty movie"></a>
+                    <progress max="100" value="0"></progress>
+                </div>
+                <div class="animate">
+                    <a href="videodetail.html"> <img class="image-rows" src="movie-images/cosmoslittle.svg" alt="image
+                                of cosmos movie"></a>
+                    <progress max="100" value="0"></progress>
+                </div>
+                <div class="animate">
+                    <a href="videodetail.html"> <img class="image-rows" src="movie-images/richylittle.svg" alt="image of
+                                rick and morty movie"></a>
+                    <progress max="100" value="0"></progress>
+                </div>
+                <div class="animate">
+                    <a href="videodetail.html"> <img class="image-rows" src="movie-images/fishlittle.svg" alt="image of
+                                big fish and begonia movie"></a>
+                    <progress max="100" value="0"></progress>
+                </div>
+
+
+            </div>
+
+            <div class="scroll-6 row">
+
+                <div class="kid">
+                    <a href="videodetail.html"> <img class="image-rows" src="movie-images/cosmoslittle.svg" alt="image
+                                of cosmos movie"></a>
+                    <progress max="100" value="0"></progress>
+                </div>
+                <div class="kid">
+                    <a href="videodetail.html"> <img class="image-rows" src="movie-images/modernlittle.svg" alt="image
+                                of modern family movie"></a>
+                    <progress max="100" value="0"></progress>
+                </div>
+                <div class="kid">
+                    <a href="videodetail.html"> <img class="image-rows" src="movie-images/richylittle.svg" alt="image of
+                                rick and morty movie"></a>
+                    <progress max="100" value="0"></progress>
+                </div>
+                <div class="kid">
+                    <a href="videodetail.html"> <img class="image-rows" src="movie-images/modernlittle.svg" alt="image
+                                of modern family movie"></a>
+                    <progress max="100" value="0"></progress>
+                </div>
+                <div class="kid">
+                    <a href="videodetail.html"> <img class="image-rows" src="movie-images/magiclittle.svg" alt="image of
+                                humans movie movie"></a>
+                    <progress max="100" value="0"></progress>
+                </div>
+                <div class="kid">
+                    <a href="videodetail.html"> <img class="image-rows" src="movie-images/richylittle.svg" alt="image of
+                                rick and morty movie"></a>
+                    <progress max="100" value="0"></progress>
+                </div>
+                <div class="kid">
+                    <a href="videodetail.html"> <img class="image-rows" src="movie-images/fishlittle.svg" alt="image of
+                                big fish and begonia movie"></a>
+                    <progress max="100" value="0"></progress>
+                </div>
+                <div class="kid">
+                    <a href="videodetail.html"> <img class="image-rows" src="movie-images/cosmoslittle.svg" alt="image
+                                of cosmos movie"></a>
+                    <progress max="100" value="0"></progress>
+                </div>
+                <div class="kid">
+                    <a href="videodetail.html"> <img class="image-rows" src="movie-images/modernlittle.svg" alt="image
+                                of modern family movie"></a>
+                    <progress max="100" value="0"></progress>
+                </div>
+                <div class="kid">
+                    <a href="videodetail.html"> <img class="image-rows" src="movie-images/richylittle.svg" alt="image of
+                                rick and morty movie"></a>
+                    <progress max="100" value="0"></progress>
+                </div>
+                <div class="kid">
+                    <a href="videodetail.html"> <img class="image-rows" src="movie-images/modernlittle.svg" alt="image
+                                of modern family movie"></a>
+                    <progress max="100" value="0"></progress>
+                </div>
+                <div class="kid">
+                    <a href="videodetail.html"> <img class="image-rows" src="movie-images/magiclittle.svg" alt="image of
+                                humans movie movie"></a>
+                    <progress max="100" value="0"></progress>
+                </div>
+                <div class="kid">
+                    <a href="videodetail.html"> <img class="image-rows" src="movie-images/richylittle.svg" alt="image of
+                                rick and morty movie"></a>
+                    <progress max="100" value="0"></progress>
+                </div>
+                <div class="kid">
+                    <a href="videodetail.html"> <img class="image-rows" src="movie-images/fishlittle.svg" alt="image of
+                                big fish and begonia movie"></a>
+                    <progress max="100" value="0"></progress>
+                </div>
+
+            </div>
+    </div>
+    <div class="scroll-3 row">
+
+        <div class="trending">
+            <a href="videodetail.html"> <img class="image-rows" src="movie-images/richylittle.svg" alt="image of
+                        rick and morty movie"></a>
+            <progress max="100" value="0"></progress>
+        </div>
+        <div class="trending">
+            <a href="videodetail.html"> <img class="image-rows" src="movie-images/cosmoslittle.svg" alt="image
+                        of cosmos movie"></a>
+            <progress max="100" value="0"></progress>
+        </div>
+        <div class="trending">
+            <a href="videodetail.html"> <img class="image-rows" src="movie-images/magiclittle.svg" alt="image of
+                        humans movie movie"></a>
+            <progress max="100" value="0"></progress>
+        </div>
+        <div class="trending">
+            <a href="videodetail.html"> <img class="image-rows" src="movie-images/strange.svg" alt="image of
+                        cosmos movie"></a>
+            <progress max="100" value="0"></progress>
+        </div>
+        <div class="trending">
+            <a href="videodetail.html"> <img class="image-rows" src="movie-images/modernlittle.svg" alt="image
+                        of modern family movie"></a>
+            <progress max="100" value="0"></progress>
+        </div>
+        <div class="trending">
+            <a href="videodetail.html"> <img class="image-rows" src="movie-images/richylittle.svg" alt="image of
+                        rick and morty movie"></a>
+            <progress max="100" value="0"></progress>
+        </div>
+        <div class="trending">
+            <a href="videodetail.html"> <img class="image-rows" src="movie-images/fishlittle.svg" alt="image of
+                        big fish and begonia movie"></a>
+            <progress max="100" value="0"></progress>
+        </div>
+        <div class="trending">
+            <a href="videodetail.html"> <img class="image-rows" src="movie-images/richylittle.svg" alt="image of
+                        rick and morty movie"></a>
+            <progress max="100" value="0"></progress>
+        </div>
+        <div class="trending">
+            <a href="videodetail.html"> <img class="image-rows" src="movie-images/cosmoslittle.svg" alt="image
+                        of cosmos movie"></a>
+            <progress max="100" value="0"></progress>
+        </div>
+        <div class="trending">
+            <a href="videodetail.html"> <img class="image-rows" src="movie-images/magiclittle.svg" alt="image of
+                        humans movie movie"></a>
+            <progress max="100" value="0"></progress>
+        </div>
+        <div class="trending">
+            <a href="videodetail.html"> <img class="image-rows" src="movie-images/strange.svg" alt="image of
+                        cosmos movie"></a>
+            <progress max="100" value="0"></progress>
+        </div>
+        <div class="trending">
+            <a href="videodetail.html"> <img class="image-rows" src="movie-images/modernlittle.svg" alt="image
+                        of modern family movie"></a>
+            <progress max="100" value="0"></progress>
+        </div>
+        <div class="trending">
+            <a href="videodetail.html"> <img class="image-rows" src="movie-images/richylittle.svg" alt="image of
+                        rick and morty movie"></a>
+            <progress max="100" value="0"></progress>
+        </div>
+        <div class="trending">
+            <a href="videodetail.html"> <img class="image-rows" src="movie-images/fishlittle.svg" alt="image of
+                        big fish and begonia movie"></a>
+            <progress max="100" value="0"></progress>
+        </div>
+
+    </div>
+
+    <div class="scroll-4 row">
+
+        <div class="sci--fi">
+            <a href="videodetail.html"> <img class="image-rows" src="movie-images/cosmoslittle.svg" alt="image
+                        of cosmos movie"></a>
+            <progress max="100" value="0"></progress>
+        </div>
+        <div class="sci--fi">
+            <a href="videodetail.html"> <img class="image-rows" src="movie-images/richylittle.svg" alt="image of
+                        rick and morty movie"></a>
+            <progress max="100" value="0"></progress>
+        </div>
+        <div class="sci--fi">
+            <a href="videodetail.html"> <img class="image-rows" src="movie-images/modernlittle.svg" alt="image
+                        of modern family movie"></a>
+            <progress max="100" value="0"></progress>
+        </div>
+        <div class="sci--fi">
+            <a href="videodetail.html"> <img class="image-rows" src="movie-images/strange.svg" alt="image of
+                        cosmos movie"></a>
+            <progress max="100" value="0"></progress>
+        </div>
+        <div class="sci--fi">
+            <a href="videodetail.html"> <img class="image-rows" src="movie-images/modernlittle.svg" alt="image
+                        of modern family movie"></a>
+            <progress max="100" value="0"></progress>
+        </div>
+        <div class="sci--fi">
+            <a href="videodetail.html"> <img class="image-rows" src="movie-images/magiclittle.svg" alt="image of
+                        humans movie movie"></a>
+            <progress max="100" value="0"></progress>
+        </div>
+        <div class="sci--fi">
+            <a href="videodetail.html"> <img class="image-rows" src="movie-images/fishlittle.svg" alt="image of
+                        big fish and begonia movie"></a>
+            <progress max="100" value="0"></progress>
+        </div>
+        <div class="sci--fi">
+            <a href="videodetail.html"> <img class="image-rows" src="movie-images/cosmoslittle.svg" alt="image
+                        of cosmos movie"></a>
+            <progress max="100" value="0"></progress>
+        </div>
+        <div class="sci--fi">
+            <a href="videodetail.html"> <img class="image-rows" src="movie-images/richylittle.svg" alt="image of
+                        rick and morty movie"></a>
+            <progress max="100" value="0"></progress>
+        </div>
+        <div class="sci--fi">
+            <a href="videodetail.html"> <img class="image-rows" src="movie-images/modernlittle.svg" alt="image
+                        of modern family movie"></a>
+            <progress max="100" value="0"></progress>
+        </div>
+        <div class="sci--fi">
+            <a href="videodetail.html"> <img class="image-rows" src="movie-images/strange.svg" alt="image of
+                        cosmos movie"></a>
+            <progress max="100" value="0"></progress>
+        </div>
+        <div class="sci--fi">
+            <a href="videodetail.html"> <img class="image-rows" src="movie-images/modernlittle.svg" alt="image
+                        of modern family movie"></a>
+            <progress max="100" value="0"></progress>
+        </div>
+        <div class="sci--fi">
+            <a href="videodetail.html"> <img class="image-rows" src="movie-images/magiclittle.svg" alt="image of
+                        humans movie movie"></a>
+            <progress max="100" value="0"></progress>
+        </div>
+        <div class="sci--fi">
+            <a href="videodetail.html"> <img class="image-rows" src="movie-images/fishlittle.svg" alt="image of
+                        big fish and begonia movie"></a>
+            <progress max="100" value="0"></progress>
+        </div>
+
+    </div>
+
+    <div class="scroll-5 row">
+
+        <div class="animate">
+            <a href="videodetail.html"> <img class="image-rows" src="movie-images/magiclittle.svg" alt="image of
+                        cosmos movie"></a>
+            <progress max="100" value="0"></progress>
+        </div>
+        <div class="animate">
+            <a href="videodetail.html"> <img class="image-rows" src="movie-images/modernlittle.svg" alt="image
+                        of modern family movie"></a>
+            <progress max="100" value="0"></progress>
+        </div>
+        <div class="animate">
+            <a href="videodetail.html"> <img class="image-rows" src="movie-images/magiclittle.svg" alt="image of
+                        humans movie movie"></a>
+            <progress max="100" value="0"></progress>
+        </div>
+        <div class="animate">
+            <a href="videodetail.html"> <img class="image-rows" src="movie-images/richylittle.svg" alt="image of
+                        rick and morty movie"></a>
+            <progress max="100" value="0"></progress>
+        </div>
+        <div class="animate">
+            <a href="videodetail.html"> <img class="image-rows" src="movie-images/cosmoslittle.svg" alt="image
+                        of cosmos movie"></a>
+            <progress max="100" value="0"></progress>
+        </div>
+        <div class="animate">
+            <a href="videodetail.html"> <img class="image-rows" src="movie-images/richylittle.svg" alt="image of
+                        rick and morty movie"></a>
+            <progress max="100" value="0"></progress>
+        </div>
+        <div class="animate">
+            <a href="videodetail.html"> <img class="image-rows" src="movie-images/fishlittle.svg" alt="image of
+                        big fish and begonia movie"></a>
+            <progress max="100" value="0"></progress>
+        </div>
+        <div class="animate">
+            <a href="videodetail.html"> <img class="image-rows" src="movie-images/magiclittle.svg" alt="image of
+                        cosmos movie"></a>
+            <progress max="100" value="0"></progress>
+        </div>
+        <div class="animate">
+            <a href="videodetail.html"> <img class="image-rows" src="movie-images/modernlittle.svg" alt="image
+                        of modern family movie"></a>
+            <progress max="100" value="0"></progress>
+        </div>
+        <div class="animate">
+            <a href="videodetail.html"> <img class="image-rows" src="movie-images/magiclittle.svg" alt="image of
+                        humans movie movie"></a>
+            <progress max="100" value="0"></progress>
+        </div>
+        <div class="animate">
+            <a href="videodetail.html"> <img class="image-rows" src="movie-images/richylittle.svg" alt="image of
+                        rick and morty movie"></a>
+            <progress max="100" value="0"></progress>
+        </div>
+        <div class="animate">
+            <a href="videodetail.html"> <img class="image-rows" src="movie-images/cosmoslittle.svg" alt="image
+                        of cosmos movie"></a>
+            <progress max="100" value="0"></progress>
+        </div>
+        <div class="animate">
+            <a href="videodetail.html"> <img class="image-rows" src="movie-images/richylittle.svg" alt="image of
+                        rick and morty movie"></a>
+            <progress max="100" value="0"></progress>
+        </div>
+        <div class="animate">
+            <a href="videodetail.html"> <img class="image-rows" src="movie-images/fishlittle.svg" alt="image of
+                        big fish and begonia movie"></a>
+            <progress max="100" value="0"></progress>
+        </div>
+
+
+    </div>
+
+    <div class="scroll-6 row">
+
+        <div class="kid">
+            <a href="videodetail.html"> <img class="image-rows" src="movie-images/cosmoslittle.svg" alt="image
+                        of cosmos movie"></a>
+            <progress max="100" value="0"></progress>
+        </div>
+        <div class="kid">
+            <a href="videodetail.html"> <img class="image-rows" src="movie-images/modernlittle.svg" alt="image
+                        of modern family movie"></a>
+            <progress max="100" value="0"></progress>
+        </div>
+        <div class="kid">
+            <a href="videodetail.html"> <img class="image-rows" src="movie-images/richylittle.svg" alt="image of
+                        rick and morty movie"></a>
+            <progress max="100" value="0"></progress>
+        </div>
+        <div class="kid">
+            <a href="videodetail.html"> <img class="image-rows" src="movie-images/modernlittle.svg" alt="image
+                        of modern family movie"></a>
+            <progress max="100" value="0"></progress>
+        </div>
+        <div class="kid">
+            <a href="videodetail.html"> <img class="image-rows" src="movie-images/magiclittle.svg" alt="image of
+                        humans movie movie"></a>
+            <progress max="100" value="0"></progress>
+        </div>
+        <div class="kid">
+            <a href="videodetail.html"> <img class="image-rows" src="movie-images/richylittle.svg" alt="image of
+                        rick and morty movie"></a>
+            <progress max="100" value="0"></progress>
+        </div>
+        <div class="kid">
+            <a href="videodetail.html"> <img class="image-rows" src="movie-images/fishlittle.svg" alt="image of
+                        big fish and begonia movie"></a>
+            <progress max="100" value="0"></progress>
+        </div>
+        <div class="kid">
+            <a href="videodetail.html"> <img class="image-rows" src="movie-images/cosmoslittle.svg" alt="image
+                        of cosmos movie"></a>
+            <progress max="100" value="0"></progress>
+        </div>
+        <div class="kid">
+            <a href="videodetail.html"> <img class="image-rows" src="movie-images/modernlittle.svg" alt="image
+                        of modern family movie"></a>
+            <progress max="100" value="0"></progress>
+        </div>
+        <div class="kid">
+            <a href="videodetail.html"> <img class="image-rows" src="movie-images/richylittle.svg" alt="image of
+                        rick and morty movie"></a>
+            <progress max="100" value="0"></progress>
+        </div>
+        <div class="kid">
+            <a href="videodetail.html"> <img class="image-rows" src="movie-images/modernlittle.svg" alt="image
+                        of modern family movie"></a>
+            <progress max="100" value="0"></progress>
+        </div>
+        <div class="kid">
+            <a href="videodetail.html"> <img class="image-rows" src="movie-images/magiclittle.svg" alt="image of
+                        humans movie movie"></a>
+            <progress max="100" value="0"></progress>
+        </div>
+        <div class="kid">
+            <a href="videodetail.html"> <img class="image-rows" src="movie-images/richylittle.svg" alt="image of
+                        rick and morty movie"></a>
+            <progress max="100" value="0"></progress>
+        </div>
+        <div class="kid">
+            <a href="videodetail.html"> <img class="image-rows" src="movie-images/fishlittle.svg" alt="image of
+                        big fish and begonia movie"></a>
+            <progress max="100" value="0"></progress>
+        </div>
+
+    </div>
+    </div>
+    <div class="footer">
+
+        <footer>
+            <ul class="social-1">
+                <li>
+                    <a href="https://google.es" target="_blank" class="social facebook"><img src="./icons/facebook.svg" alt=""></a>
+                </li>
+                <li>
+                    <a href="https://google.es" class="social
+                                instagram"><img src="./icons/instagram.svg" alt=""></a>
+                </li>
+                <li>
+                    <a href="https://google.es" class="social
+                                twitter"><img id="tweet" src="./icons/twitter.svg" alt=""></a>
+                </li>
+                <li>
+                    <a href="https://google.es" target="_blank" class="social youtube"><img src="./icons/youtube-play.svg" alt=""></a>
+                </li>
+
+
+            </ul class="social-2">
+            <div class="footer-list">
+                <ul>
+                    <li>
+                        <a href="https://google.es" target="_blank" class="list-1">About this project</a>
+                    </li>
+                    <li>
+                        <a href="https://google.es" target="_blank" class="list-1">Media Center</a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com" class="list-1">Privacy</a>
+                    </li>
+                    <li>
+                        <a href="https://google.es" target="_blank" class="list-1">Contact</a>
+                    </li>
+
+
+                </ul>
+                <ul class="social-3">
+                    <li>
+                        <a href="https://google.es" target="_blank" class="list-2">Most viewed</a>
+                    </li>
+                    <li>
+                        <a href="https://google.es" class="list-2">Last
+                                    Releases</a>
+                    </li>
+                    <li>
+                        <a href="https://google.es" target="_blank" class="list-2">My favourite</a>
+                    </li>
+
+                </ul>
+                <ul class="social-4">
+                    <li>
+                        <a href="#sci-fi" class="list-3">Sci-Fi</a>
+                    </li>
+                    <li>
+                        <a href="#animation" class="list-3">Animation</a>
+                    </li>
+                    <li>
+                        <a href="#kids" class="list-3">Kids</a>
+                    </li>
+                </ul>
+                <ul class="social-5">
+                    <li>
+                        <a href="#trending-now" class="list-3">Trending
+                                    Now</a>
+                    </li>
+                    <li>
+                        <a href="#continue-watching" class="list-3">Continue
+                                    Watching</a>
+                    </li>
+                </ul>
+            </div>
+            <p id="copyright">&copy; 2018 Netflix Inc</p>
+        </footer>
+    </div>
+
+
+    </div>
 
 </body>
 
