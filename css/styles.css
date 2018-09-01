@@ -332,7 +332,7 @@ body {
   width: 100%; }
 
 html.debug {
-  background: transparent url("./../movie-images/00-home.jpg") no-repeat top left;
+  background: transparent url("./../movie-images/00-home-with-hovers.jpg") no-repeat top left;
   background-size: 100%; }
   html.debug body {
     opacity: 0.7; }
@@ -494,6 +494,76 @@ button:hover {
   .row image {
     height: 121.69px;
     width: 216px; }
+
+.oval {
+  border-radius: 50%;
+  box-sizing: border-box;
+  height: 35px;
+  width: 35px;
+  border: 1px solid #FFFFFF;
+  background-color: rgba(0, 0, 0, 0.51); }
+
+#firstspan {
+  color: #FFFFFF;
+  font-family: Helvetica;
+  font-size: 16px;
+  letter-spacing: 1.2px;
+  line-height: 19px; }
+
+#span4 {
+  color: #FFFFFF;
+  font-family: Helvetica;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  line-height: 17px; }
+
+#span3 {
+  color: #FFFFFF;
+  font-family: Helvetica;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  line-height: 17px;
+  border: 1px solid rgba(255, 255, 255, 0.41); }
+
+#span2 {
+  width: 74px;
+  color: #46D36A;
+  font-family: Helvetica;
+  font-size: 14px;
+  letter-spacing: 0.4px;
+  line-height: 17px; }
+
+#overlayp {
+  width: 195px;
+  color: #FFFFFF;
+  font-family: Helvetica;
+  font-size: 14px;
+  line-height: 18px; }
+
+.photo-overlay {
+  position: absolute;
+  bottom: 43px;
+  left: 12px;
+  display: flex;
+  flex-direction: column; }
+
+.photo-overlay {
+  opacity: 0;
+  transition: .5s; }
+  .photo-overlay:hover {
+    opacity: 1; }
+
+.fa {
+  position: absolute;
+  top: 9px;
+  left: 12px; }
+
+.playicon {
+  position: relative; }
+
+.photo {
+  position: relative;
+  overflow: hidden; }
 
 .top-nav {
   display: flex;
