@@ -399,6 +399,9 @@ progress::-webkit-progress-value {
   color: red;
   background-color: red; }
 
+progress[value="0"] {
+  visibility: hidden; }
+
 .h-buttons {
   margin-left: 58px;
   margin-bottom: 15px; }

@@ -99,3 +99,7 @@ progress::-webkit-progress-value {
     color: red;
     background-color: red;
 }
+
+progress[value="0"] {
+    visibility: hidden;
+}
