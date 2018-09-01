@@ -32,7 +32,7 @@ a {
 }
 
 p {
-    margin: 0 0 0 59px;
+    margin: 3px 0 0 59px;
     height: 75px;
     width: 485px;
     color: #ffffff;
@@ -87,65 +87,15 @@ h2 {
 
 progress[value] {
     /* Reset the default appearance */
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    border: none;
+    @extend %appearence;
     height: 4px;
     width: 132px;
     margin-left: 44px;
+    background-color: red;
 }
 
 progress::-webkit-progress-value {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
+    @extend %appearence;
     color: red;
+    background-color: red;
 }
-
-progress::-moz-progress-bar {
-    color: red;
-}
-
-// progress-bar[value] {
-//   height: 4px;
-//   width: 132px;
-//   -moz-appearance: none;
-//   -webkit-appearance: none;
-//    appearance: none;
-// }
-// progress[value]::-webkit-progress-bar {
-//   background-color:#606060;
-//   color:red;
-// }
-// progress {
-//   -webkit-appearance: none;
-//
-//   appearance: none;
-//
-//   background-color: ;
-//   margin-left: 44px;
-//   progress::-webkit-progress-bar {
-//     background-color: grey;
-//   }
-//   progress::-webkit-progress-value {
-//     background-color: red;
-//   }
-//   progress::-moz-progress-bar {
-//     background-color: red;
-//   }
-// }
-// // progress::-webkit-progress-value
-// para el color de la barra interna
-// Esta de aqui es para mozilla --> progress::-moz-progress-bar
-// a progress y progress[value] le tienes que aplicar esto
-// -webkit-appearance: none;
-//  -moz-appearance: none;
-//  appearance: none;
-//  progress{
-//   /* Reset the default appearance */
-//   -webkit-appearance: none;
-//      -moz-appearance: none;
-//           appearance: none;
-//   /* Get rid of default border in Firefox. */
-//   border: none;

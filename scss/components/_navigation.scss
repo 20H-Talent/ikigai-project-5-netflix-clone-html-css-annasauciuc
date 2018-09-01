@@ -9,17 +9,18 @@
         margin-left: 45px;
         @include flexy($dir: row, $align: center, $align-s: end);
     }
-    form {
-        @include flexy($dir: row);
-        margin-left: auto;
-    }
     li {
-        // margin-right: 16px;
+        margin-right: 18px;
         color: $text-color;
         font-family: Helvetica;
         font-size: 14px;
-        // font-weight: bold;
+        font-weight: bold;
         letter-spacing: 0.5px;
         line-height: 17px;
+    }
+    form {
+        position: absolute;
+        right: 63px;
+        top: 24px;
     }
 }

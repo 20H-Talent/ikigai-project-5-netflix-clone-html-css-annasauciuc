@@ -7,6 +7,17 @@ footer {
     img {
         margin-right: 26px;
     }
+    #copyright {
+        margin-top: 61px;
+        margin-left: 0;
+        height: 17px;
+        width: 116px;
+        color: #7F7F7F;
+        font-family: Helvetica;
+        font-size: 14px;
+        letter-spacing: 0.11px;
+        line-height: 17px;
+    }
     li {
         color: #7F7F7F;
         font-family: Helvetica;
@@ -21,9 +32,9 @@ footer {
     .social-1 {
         @include flexy($dir: row);
     }
-    .social {
-        margin: auto;
-    }
+    // .social {
+    //     margin: auto;
+    // }
     .footer-list {
         @include flexy($dir: row, $just: space-between);
     }
@@ -40,7 +51,8 @@ footer {
     .social-5 {
         margin-left: 5px;
     }
-    // .twitter {
-    //     margin-right: 3px;
-    // }
 }
+
+// #tweet {
+//     margin-right: 17px;
+// }
