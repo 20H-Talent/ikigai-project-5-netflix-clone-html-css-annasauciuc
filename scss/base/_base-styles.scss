@@ -31,6 +31,12 @@ a {
     width: 100%;
 }
 
+.row {
+    a {
+        @include flexy();
+    }
+}
+
 p {
     margin: 3px 0 0 59px;
     height: 75px;
@@ -82,7 +88,7 @@ h2 {
 }
 
 .first-line {
-    margin-bottom: 204px;
+    margin-bottom: 205px;
 }
 
 progress[value] {
