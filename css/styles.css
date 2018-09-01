@@ -463,9 +463,7 @@ progress[value="0"] {
   margin-left: 58px;
   overflow: scroll;
   width: 100%;
-  overflow-x: hidden;
-  /* Hide horizontal scrollbar */
-  overflow-y: scroll; }
+  /* Hide horizontal scrollbar */ }
 
 .image-rows {
   margin-right: 5px; }
@@ -475,9 +473,8 @@ progress[value="0"] {
   flex-direction: row;
   margin-left: 60px;
   margin-bottom: 35px;
-  overflow-x: hidden;
   /* Hide horizontal scrollbar */
-  overflow-y: scroll;
+  overflow: scroll;
   width: 100%; }
   .row image {
     height: 121.69px;

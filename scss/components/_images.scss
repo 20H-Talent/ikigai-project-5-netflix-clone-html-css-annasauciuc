@@ -13,9 +13,7 @@
     margin-left: 58px;
     overflow: scroll;
     width: 100%;
-    overflow-x: hidden;
     /* Hide horizontal scrollbar */
-    overflow-y: scroll;
 }
 
 .image-rows {
@@ -26,9 +24,8 @@
     @include flexy($dir: row);
     margin-left: 60px;
     margin-bottom: 35px;
-    overflow-x: hidden;
     /* Hide horizontal scrollbar */
-    overflow-y: scroll;
+    overflow: scroll;
     width: 100%;
     image {
         height: 121.69px;

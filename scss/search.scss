@@ -1,5 +1,6 @@
 @import "utilities/index";
-@import "base/index";
-@import "search/navigation";
-@import "search/images";
-@import "search/footer";
+@import "search/base-search";
+@import "search/navigation-search";
+@import "search/images-search";
+@import "search/footer-search";
+@import "base/normalize";

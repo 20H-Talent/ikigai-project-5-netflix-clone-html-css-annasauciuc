@@ -5,7 +5,7 @@
 .row {
     @include flexy($dir: row);
     margin-left: 60px;
-    margin-bottom: 35px;
+    margin-bottom: 39px;
     overflow-x: hidden;
     /* Hide horizontal scrollbar */
     overflow-y: scroll;

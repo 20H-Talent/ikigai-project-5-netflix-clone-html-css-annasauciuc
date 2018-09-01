@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: $text-color;
+    font-family: $font-family;
+    background-color: $background-body;
+    width: 100%;
+}
+
+html.debug {
+    background: transparent url("./../movie-images/01-search.jpg") no-repeat top left;
+    background-size: 100%;
+    body {
+        opacity: 0.7;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    &:hover {
+        color: darkblue;
+    }
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+.row {
+    a {
+        @include flexy();
+    }
+}
+
+.first-line {
+    margin-bottom: 95px;
+}
+
+progress[value] {
+    /* Reset the default appearance */
+    @extend %appearence;
+    height: 4px;
+    width: 132px;
+    margin-left: 44px;
+    background-color: red;
+}
+
+progress::-webkit-progress-value {
+    @extend %appearence;
+    color: red;
+    background-color: red;
+}
+
+progress[value="0"] {
+    visibility: hidden;
+}
