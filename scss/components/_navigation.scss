@@ -1,5 +1,9 @@
 .top-nav {
     @include flexy($dir: row);
+    // position: -webkit-sticky;
+    // /* Safari */
+    // position: sticky;
+    // top: 0;
     margin-left: 58px;
     margin-top: 22px;
     nav {
