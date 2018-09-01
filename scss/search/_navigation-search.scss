@@ -4,6 +4,14 @@
     // /* Safari */
     // position: sticky;
     // top: 0;
+    a {
+        text-decoration: none;
+        color: white;
+        &:hover {
+            opacity: 0.5;
+            @extend %transition;
+        }
+    }
     margin-left: 58px;
     margin-top: 21px;
     .active {

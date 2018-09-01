@@ -52,3 +52,9 @@
     right: 0;
     top: 512px;
 }
+
+button:hover {
+    color: black;
+    background-color: white;
+    @extend %transition;
+}

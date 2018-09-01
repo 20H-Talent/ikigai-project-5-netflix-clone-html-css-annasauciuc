@@ -4,6 +4,13 @@ progress[value], progress::-webkit-progress-value {
   appearance: none;
   border: none; }
 
+button:hover, .top-nav a:hover {
+  -webkit-transition: background-color 1000ms linear;
+  -moz-transition: background-color 1000ms linear;
+  -o-transition: background-color 1000ms linear;
+  -ms-transition: background-color 1000ms linear;
+  transition: background-color 1000ms linear; }
+
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -324,11 +331,15 @@ body {
   background-color: #141414;
   width: 100%; }
 
+html.debug {
+  background: transparent url("./../movie-images/00-home.jpg") no-repeat top left;
+  background-size: 100%; }
+  html.debug body {
+    opacity: 0.7; }
+
 a {
   text-decoration: none;
   color: white; }
-  a:hover {
-    color: darkblue; }
 
 .container {
   width: 100%;
@@ -448,6 +459,10 @@ progress[value="0"] {
   right: 0;
   top: 512px; }
 
+button:hover {
+  color: black;
+  background-color: white; }
+
 .image-header {
   height: 74.31px;
   width: 459.12px;
@@ -485,6 +500,11 @@ progress[value="0"] {
   flex-direction: row;
   margin-left: 58px;
   margin-top: 21px; }
+  .top-nav a {
+    text-decoration: none;
+    color: white; }
+    .top-nav a:hover {
+      opacity: 0.5; }
   .top-nav .active {
     font-weight: bold; }
   .top-nav #nav-item4 {
@@ -515,6 +535,8 @@ footer {
   margin-left: 229px;
   margin-top: 129px;
   margin-bottom: 35px; }
+  footer a:hover {
+    text-decoration: underline; }
   footer img:not(#tweet) {
     margin-right: 26px; }
   footer #tweet {

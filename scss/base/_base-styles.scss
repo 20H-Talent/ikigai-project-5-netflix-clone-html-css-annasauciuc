@@ -11,19 +11,17 @@ body {
     width: 100%;
 }
 
-// html.debug {
-//     background: transparent url("./../movie-images/00-home.jpg") no-repeat top left;
-//     background-size: 100%;
-//     body {
-//         opacity: 0.7;
-//     }
-// }
+html.debug {
+    background: transparent url("./../movie-images/00-home.jpg") no-repeat top left;
+    background-size: 100%;
+    body {
+        opacity: 0.7;
+    }
+}
+
 a {
     text-decoration: none;
     color: white;
-    &:hover {
-        color: darkblue;
-    }
 }
 
 .container {

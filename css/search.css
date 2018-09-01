@@ -4,6 +4,13 @@ progress[value], progress::-webkit-progress-value {
   appearance: none;
   border: none; }
 
+.top-nav a:hover {
+  -webkit-transition: background-color 1000ms linear;
+  -moz-transition: background-color 1000ms linear;
+  -o-transition: background-color 1000ms linear;
+  -ms-transition: background-color 1000ms linear;
+  transition: background-color 1000ms linear; }
+
 * {
   box-sizing: border-box; }
 
@@ -24,8 +31,6 @@ html.debug {
 a {
   text-decoration: none;
   color: white; }
-  a:hover {
-    color: darkblue; }
 
 .container {
   width: 100%;
@@ -56,6 +61,11 @@ progress[value="0"] {
   flex-direction: row;
   margin-left: 58px;
   margin-top: 21px; }
+  .top-nav a {
+    text-decoration: none;
+    color: white; }
+    .top-nav a:hover {
+      opacity: 0.5; }
   .top-nav .active {
     font-weight: bold; }
   .top-nav #nav-item4 {
@@ -102,6 +112,8 @@ footer {
   margin-left: 229px;
   margin-top: 129px;
   margin-bottom: 35px; }
+  footer a:hover {
+    text-decoration: underline; }
   footer img:not(#tweet) {
     margin-right: 26px; }
   footer #tweet {
