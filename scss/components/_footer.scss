@@ -4,8 +4,11 @@ footer {
     margin-left: 229px;
     margin-top: 125px;
     margin-bottom: 35px;
-    img {
+    img:not(#tweet) {
         margin-right: 26px;
+    }
+    #tweet {
+        margin-right: 18px;
     }
     #copyright {
         margin-top: 61px;
@@ -32,9 +35,6 @@ footer {
     .social-1 {
         @include flexy($dir: row);
     }
-    // .social {
-    //     margin: auto;
-    // }
     .footer-list {
         @include flexy($dir: row, $just: space-between);
     }
@@ -52,7 +52,3 @@ footer {
         margin-left: 5px;
     }
 }
-
-// #tweet {
-//     margin-right: 17px;
-// }

@@ -5,20 +5,25 @@
     // position: sticky;
     // top: 0;
     margin-left: 58px;
-    margin-top: 22px;
+    margin-top: 21px;
+    .active {
+        font-weight: bold;
+    }
+    #nav-item4 {
+        margin-right: 15px;
+    }
     nav {
         @include flexy($dir: row);
     }
     ul {
         margin-left: 45px;
-        @include flexy($dir: row, $align: center, $align-s: end);
+        @include flexy($dir: row, $align: center);
     }
     li {
         margin-right: 18px;
         color: $text-color;
         font-family: Helvetica;
         font-size: 14px;
-        font-weight: bold;
         letter-spacing: 0.5px;
         line-height: 17px;
     }
