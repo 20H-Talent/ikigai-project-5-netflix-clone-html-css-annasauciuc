@@ -1,43 +1,52 @@
 .top-nav {
+  @include flexy($dir: row);
+  &:hover {
+    background-color: #141414;
+  }
+
+  position: fixed;
+  top: 0;
+
+  a {
+    text-decoration: none;
+    color: white;
+    &:hover {
+      opacity: 0.5;
+      @extend %transition;
+    }
+  }
+  .active {
+    font-weight: bold;
+  }
+  #nav-item4 {
+    margin-right: 15px;
+  }
+  nav {
     @include flexy($dir: row);
-    // position: -webkit-sticky;
-    // /* Safari */
-    // position: sticky;
-    // top: 0;
-    margin-left: 58px;
-    margin-top: 21px;
-    a {
-        text-decoration: none;
-        color: white;
-        &:hover {
-            opacity: 0.5;
-            @extend %transition;
-        }
-    }
-    .active {
-        font-weight: bold;
-    }
-    #nav-item4 {
-        margin-right: 15px;
-    }
-    nav {
-        @include flexy($dir: row);
-    }
     ul {
-        margin-left: 45px;
-        @include flexy($dir: row, $align: center);
+      margin-left: 45px;
+      align-self: center;
+      margin-top: 19px;
+
+      @include flexy($dir: row, $align: center);
     }
     li {
-        margin-right: 18px;
-        color: $text-color;
-        font-family: Helvetica;
-        font-size: 14px;
-        letter-spacing: 0.5px;
-        line-height: 17px;
+      margin-right: 18px;
+      color: $text-color;
+      font-family: Helvetica;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+      line-height: 17px;
     }
-    form {
-        position: absolute;
-        right: 63px;
-        top: 24px;
-    }
+  }
+
+  form {
+    position: absolute;
+    right: 63px;
+    top: 24px;
+  }
+}
+.logo {
+  margin-left: 58px;
+  margin-top: 21px;
 }
