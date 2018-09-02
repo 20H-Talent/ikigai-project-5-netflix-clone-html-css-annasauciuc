@@ -4,7 +4,6 @@
 
 .row {
     @include flexy($dir: row);
-    margin-left: 60px;
     margin-bottom: 39px;
     overflow-x: hidden;
     /* Hide horizontal scrollbar */
@@ -13,6 +12,37 @@
     image {
         height: 121.69px;
         width: 216px;
+    }
+}
+
+.main {
+    margin-left: 58px;
+    .scroll-3 {
+        margin-left: 5px;
+    }
+    .scroll-4 {
+        margin-top: -3px;
+        margin-left: 3px;
+    }
+    .scroll-5 {
+        margin-top: 41px;
+        margin-left: 2px;
+    }
+    .scroll-6 {
+        margin-left: 2px;
+        margin-top: 41px;
+    }
+    .scroll-7 {
+        margin-left: 3px;
+    }
+    .scroll-8 {
+        margin-top: -3px;
+    }
+    .scroll-9 {
+        margin-top: 41px;
+    }
+    .scroll-10 {
+        margin-top: 40px;
     }
 }
 

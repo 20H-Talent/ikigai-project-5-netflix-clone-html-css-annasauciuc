@@ -324,8 +324,6 @@ ol, ul {
   box-sizing: border-box; }
 
 body {
-  height: 2572px;
-  width: 1440px;
   margin: 0;
   padding: 0;
   color: #ffffff;
@@ -397,7 +395,7 @@ h2 {
   line-height: 24px; }
 
 .first-line {
-  margin-bottom: 205px; }
+  margin-bottom: -50px; }
 
 progress[value] {
   /* Reset the default appearance */
@@ -412,6 +410,53 @@ progress::-webkit-progress-value {
 
 progress[value="0"] {
   visibility: hidden; }
+
+.input-container {
+  display: -ms-flexbox;
+  /* IE10 */
+  display: flex;
+  position: absolute;
+  right: 59px;
+  top: 17px; }
+
+.icon {
+  padding: 10px;
+  position: absolute;
+  right: 230px;
+  bottom: -4px; }
+
+.input-field {
+  height: 34px;
+  width: 268px;
+  outline: none; }
+
+.input-field:focus {
+  border: 1px solid #DDDDDD;
+  background-color: #1D1C1D; }
+
+input[type="text"] {
+  background: transparent;
+  border: none; }
+
+::placeholder {
+  width: 139px;
+  color: #7F7F7F;
+  font-family: Helvetica;
+  font-size: 15px;
+  letter-spacing: -0.2px;
+  line-height: 18px; }
+
+/* webkit solution */
+::-webkit-input-placeholder {
+  text-align: center; }
+
+/* mozilla solution - this is for firefox 18+ */
+::-moz-placeholder {
+  text-align: right; }
+
+/* mozilla solution - this is for firefox 18- */
+:-moz-placeholder {
+  text-align: right; }
 
 .h-buttons {
   margin-left: 58px;
@@ -477,7 +522,7 @@ button:hover {
   flex-direction: row;
   overflow-x: hidden;
   overflow-y: visible;
-  margin-bottom: 46px;
+  margin-bottom: 43px;
   margin-left: 58px;
   overflow: scroll;
   width: 100%;
@@ -500,7 +545,7 @@ button:hover {
   display: flex;
   flex-direction: row;
   margin-left: 60px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   /* Hide horizontal scrollbar */
   overflow: scroll;
   width: 100%; }
@@ -581,9 +626,7 @@ button:hover {
 
 .top-nav {
   display: flex;
-  flex-direction: row;
-  position: fixed;
-  top: 0; }
+  flex-direction: row; }
   .top-nav:hover {
     background-color: #141414; }
   .top-nav a {
@@ -612,14 +655,60 @@ button:hover {
       font-size: 14px;
       letter-spacing: 0.5px;
       line-height: 17px; }
-  .top-nav form {
-    position: absolute;
-    right: 63px;
-    top: 24px; }
 
 .logo {
   margin-left: 58px;
   margin-top: 21px; }
+
+.input-container {
+  display: -ms-flexbox;
+  /* IE10 */
+  display: flex;
+  position: absolute;
+  right: 59px;
+  top: 17px; }
+
+a.icon {
+  z-index: 999;
+  padding: 10px;
+  position: absolute;
+  right: 232px;
+  bottom: -7px; }
+
+.input-field {
+  height: 34px;
+  width: 268px;
+  outline: none; }
+
+.input-field:focus {
+  border: 1px solid #DDDDDD;
+  background-color: #1D1C1D; }
+
+input[type="text"] {
+  direction: rtl;
+  background: transparent;
+  border: none; }
+
+::placeholder {
+  width: 139px;
+  color: #7F7F7F;
+  font-family: Helvetica;
+  font-size: 15px;
+  letter-spacing: -0.2px;
+  line-height: 18px; }
+
+/* webkit solution */
+::-webkit-input-placeholder {
+  text-align: center;
+  text-indent: 100%; }
+
+/* mozilla solution - this is for firefox 18+ */
+::-moz-placeholder {
+  text-align: right; }
+
+/* mozilla solution - this is for firefox 18- */
+:-moz-placeholder {
+  text-align: right; }
 
 footer {
   height: 246px;

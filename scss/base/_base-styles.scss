@@ -3,7 +3,8 @@
 }
 
 body {
-    height: 2572px;	width: 1440px;
+    // height: 2572px;
+    // width: 1440px;
     // width: calc(100% - 60px);
     // height:auto;
     // width: 90%;
@@ -12,7 +13,6 @@ body {
     color: $text-color;
     font-family: $font-family;
     background-color: $background-body;
-   
 }
 
 html.debug {
@@ -91,7 +91,7 @@ h2 {
 }
 
 .first-line {
-    margin-bottom: 205px;
+    margin-bottom: -50px;
 }
 
 progress[value] {
@@ -112,3 +112,105 @@ progress::-webkit-progress-value {
 progress[value="0"] {
     visibility: hidden;
 }
+
+.input-container {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    // margin-bottom: 15px;
+    position: absolute;
+    right: 59px;
+    top: 17px;
+}
+
+.icon {
+    padding: 10px;
+    position: absolute;
+    right: 230px;
+    bottom: -4px;
+}
+
+.input-field {
+    height: 34px;
+    width: 268px;
+    // border: 1px solid #DDDDDD;
+    // background-color: #1D1C1D;
+    outline: none;
+}
+
+.input-field:focus {
+    border: 1px solid #DDDDDD;
+    background-color: #1D1C1D;
+}
+
+input[type="text"] {
+    background: transparent;
+    border: none;
+}
+
+::placeholder {
+    // margin-left: 80px;
+    width: 139px;
+    color: #7F7F7F;
+    font-family: Helvetica;
+    font-size: 15px;
+    letter-spacing: -0.2px;
+    line-height: 18px;
+}
+
+// ::-moz-placeholder,
+//  :-moz-placeholder {
+//     text-align: right !important;
+// }
+
+/* webkit solution */
+
+::-webkit-input-placeholder {
+    text-align: center;
+}
+
+
+/* mozilla solution - this is for firefox 18+ */
+
+::-moz-placeholder {
+    text-align: right;
+}
+
+
+/* mozilla solution - this is for firefox 18- */
+
+:-moz-placeholder {
+    text-align: right;
+}
+
+// .wrapper input[type="text"] {
+//     position: relative;
+// }
+// input {
+//     font-family: 'FontAwesome';
+// }
+// /* This is for the placeholder */
+// .wrapper:before {
+//     font-family: 'FontAwesome';
+//     color: red;
+//     position: relative;
+//     left: -5px;
+//     content: "\f002";
+// }
+// form {
+//     position: relative;
+// }
+// input[type=text] {
+//     font-family: 'FontAwesome';
+//     height: 34px;
+//     width: 268px;
+//     border: 1px solid #DDDDDD;
+//     background-color: #1D1C1D;
+//     position: absolute;
+// }
+// .search {
+//     // position: absolute;
+//     right: 302px;
+//     top: 24px;
+//     z-index: 2;
+// }
