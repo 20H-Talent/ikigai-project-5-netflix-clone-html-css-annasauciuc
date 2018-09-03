@@ -335,7 +335,7 @@ body {
   background-color: #141414; }
 
 html.debug {
-  background: transparent url("./../movie-images/00-home-with-hovers.jpg") no-repeat top left;
+  background: transparent url("./../movie-images/00-home.jpg") no-repeat top left;
   background-size: 100%; }
   html.debug body {
     opacity: 0.7; }
@@ -459,7 +459,7 @@ button:hover {
   background-color: white; }
 
 .image-header {
-  margin-top: 253px;
+  margin-top: 255px;
   height: 74.31px;
   width: 100%;
   margin-bottom: 28px;
@@ -470,7 +470,7 @@ button:hover {
   flex-direction: row;
   overflow-x: scroll;
   overflow-y: hidden;
-  margin-bottom: 45px;
+  margin-bottom: 44px;
   margin-left: 58px;
   /* Hide horizontal scrollbar */ }
 
@@ -491,7 +491,7 @@ button:hover {
   display: flex;
   flex-direction: row;
   margin-left: 60px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   /* Hide horizontal scrollbar */
   overflow-x: scroll;
   overflow-y: hidden; }
@@ -570,17 +570,15 @@ a {
   a:hover {
     opacity: 0.5; }
 
-.active {
+nav .active {
   font-weight: bold;
-  margin-left: 43px; }
-
-#nav-item4 {
+  margin-left: 44px; }
+nav #nav-item4 {
   margin-right: 15px; }
-
 nav ul {
   margin-left: 45px;
   align-self: center;
-  margin-top: 19px;
+  margin-top: 21px;
   display: flex;
   flex-direction: row;
   align-items: center; }
@@ -592,47 +590,46 @@ nav li {
   line-height: 17px; }
 
 .logo {
-  margin-left: 14px; }
+  margin-left: 13px; }
 
-form {
-  position: relative;
-  margin-left: auto;
-  margin-right: 29px;
-  height: 34px;
-  width: 268px; }
-  form label {
-    position: absolute;
-    top: 0;
-    transform: translateY(30%); }
+.custom-search {
+  position: absolute;
+  right: 52px;
+  top: 14px; }
 
-#search {
-  padding-left: 30px;
-  height: 34px;
-  background: transparent;
+#express-form-typeahead {
+  background-color: transparent;
+  background-image: url(./../icons/lupa.svg);
+  background-position: 5px center;
+  background-repeat: no-repeat;
   border: none;
-  width: 0;
-  outline: none; }
-  #search:focus {
-    border: 1px solid #DDDDDD;
-    background-color: #1D1C1D;
-    width: 222px;
-    transition: All 1s ease;
-    -webkit-transition: All 1s ease;
-    -moz-transition: All 1s ease;
-    -o-transition: All 1s ease; }
+  color: white;
+  cursor: pointer;
+  height: 37px;
+  padding: 0 0 0 34px;
+  position: relative;
+  -webkit-transition: width 800ms ease, background 800ms ease-out;
+  transition: width 800ms ease, background 800ms ease-out;
+  width: 0; }
 
-::placeholder {
-  width: 139px;
-  color: #ffffff;
-  font-family: Helvetica;
-  font-size: 0.9375rem;
-  letter-spacing: -0.2px;
-  line-height: 18px; }
+#express-form-typeahead:focus {
+  background-color: #1D1C1D;
+  cursor: text;
+  outline: 0;
+  width: 268px; }
+
+.search-btn {
+  display: none; }
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  color: white; }
 
 footer {
   height: 246px;
+  width: 849px;
   margin-left: 229px;
-  margin-top: 113px;
+  margin-top: 111px;
   margin-bottom: 35px; }
   footer a:hover {
     text-decoration: underline; }
@@ -666,6 +663,10 @@ footer {
   footer .social-1 {
     display: flex;
     flex-direction: row; }
+  footer .social-4 {
+    padding-right: 45px; }
+  footer .social-3 {
+    padding-right: 18px; }
 
 header {
   background: url("./../movie-images/background.svg") no-repeat top center;

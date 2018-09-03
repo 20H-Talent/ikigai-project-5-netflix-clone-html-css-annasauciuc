@@ -1,8 +1,8 @@
 footer {
     height: 246px;
-    // width: 100%;
+    width: 849px;
     margin-left: 229px;
-    margin-top: 113px;
+    margin-top: 111px;
     margin-bottom: 35px;
 
     a:hover {
@@ -49,14 +49,13 @@ footer {
         @include flexy($dir: row);
     }
 
-//     .social-4 {
-//         padding-right: 54px;
-//         margin-left: 33px;
-//     }
+     .social-4 {
+        padding-right: 45px;
+    }
 
-//     .social-3 {
-//         margin-left: 16px;
-//     }
+     .social-3 {
+        padding-right: 18px;
+    }
 
 //     .social-5 {
 //         margin-left: 5px;
