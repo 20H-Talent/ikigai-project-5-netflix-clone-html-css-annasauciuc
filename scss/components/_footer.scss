@@ -2,17 +2,21 @@ footer {
     height: 246px;
     width: 849px;
     margin-left: 229px;
-    margin-top: 112px;
+    margin-top: 128px;
     margin-bottom: 35px;
+
     a:hover {
         text-decoration: underline;
     }
+
     img:not(#tweet) {
         margin-right: 26px;
     }
+
     #tweet {
         margin-right: 18px;
     }
+
     #copyright {
         margin-top: 61px;
         margin-left: 0;
@@ -24,6 +28,7 @@ footer {
         letter-spacing: 0.11px;
         line-height: 17px;
     }
+
     li {
         color: #7F7F7F;
         font-family: Helvetica;
@@ -32,25 +37,32 @@ footer {
         line-height: 16px;
         margin-bottom: 15px;
     }
+
     .social:hover {
-        transform: scale(1.2)
+        transform: scale(1.2);
     }
+
     .social-1 {
         @include flexy($dir: row);
     }
+
     .footer-list {
         @include flexy($dir: row, $just: space-between);
     }
+
     .social-1 {
         @include flexy($dir: row);
     }
+
     .social-4 {
         padding-right: 54px;
         margin-left: 33px;
     }
+
     .social-3 {
         margin-left: 16px;
     }
+
     .social-5 {
         margin-left: 5px;
     }

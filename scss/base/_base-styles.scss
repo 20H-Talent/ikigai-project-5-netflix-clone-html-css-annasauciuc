@@ -1,5 +1,9 @@
 * {
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box; /* Firefox, other Gecko */
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -8,8 +12,7 @@ body {
     // width: calc(100% - 60px);
     // height:auto;
     // width: 90%;
-    margin: 0;
-    padding: 0;
+
     color: $text-color;
     font-family: $font-family;
     background-color: $background-body;
@@ -19,23 +22,25 @@ html.debug {
     width: 100%;
     background: transparent url("./../movie-images/00-home-with-hovers.jpg") no-repeat top left;
     background-size: 100%;
+
     body {
         opacity: 0.7;
     }
 }
+
 a {
     text-decoration: none;
     color: white;
 }
 
-.container {
-    width: 100%;
-    margin: auto;
-}
+// .container {
+//     width: 100%;
+//     margin: auto;
+// }
 
 .row {
     a {
-        @include flexy();
+        @include flexy;
     }
 }
 
@@ -96,6 +101,7 @@ h2 {
 progress[value] {
     /* Reset the default appearance */
     @extend %appearence;
+
     height: 4px;
     width: 132px;
     margin-left: 44px;
@@ -104,6 +110,7 @@ progress[value] {
 
 progress::-webkit-progress-value {
     @extend %appearence;
+
     color: red;
     background-color: red;
 }
@@ -114,8 +121,10 @@ progress[value="0"] {
 
 .input-container {
     display: -ms-flexbox;
+
     /* IE10 */
     display: flex;
+
     // margin-bottom: 15px;
     position: absolute;
     right: 59px;
@@ -132,6 +141,7 @@ progress[value="0"] {
 .input-field {
     height: 34px;
     width: 268px;
+
     // border: 1px solid #DDDDDD;
     // background-color: #1D1C1D;
     outline: none;
@@ -168,13 +178,11 @@ input[type="text"] {
     text-align: center;
 }
 
-
 /* mozilla solution - this is for firefox 18+ */
 
 ::-moz-placeholder {
     text-align: right;
 }
-
 
 /* mozilla solution - this is for firefox 18- */
 
@@ -188,7 +196,7 @@ input[type="text"] {
 // input {
 //     font-family: 'FontAwesome';
 // }
-// /* This is for the placeholder */
+// /* This is for the placeholder
 // .wrapper:before {
 //     font-family: 'FontAwesome';
 //     color: red;

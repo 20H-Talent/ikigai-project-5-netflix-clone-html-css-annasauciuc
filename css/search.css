@@ -12,23 +12,22 @@ progress[value], progress::-webkit-progress-value {
   transition: background-color 1000ms linear; }
 
 * {
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
 
 body {
-  margin: 0;
-  padding: 0;
   color: #ffffff;
   font-family: Helvetica;
-  background-color: #141414;
-  width: 100%; }
+  background-color: #141414; }
 
 a {
   text-decoration: none;
   color: white; }
-
-.container {
-  width: 100%;
-  margin: auto; }
 
 .row a {
   display: flex; }
@@ -145,7 +144,8 @@ input[type="text"] {
   margin-bottom: 39px;
   overflow-x: hidden;
   /* Hide horizontal scrollbar */
-  overflow-y: scroll;
+  overflow-y: hidden;
+  overflow-x: scroll;
   width: 100%; }
   .row image {
     height: 121.69px;
