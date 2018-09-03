@@ -47,7 +47,6 @@
     /* Hide horizontal scrollbar */
     overflow-x: scroll;
     overflow-y: hidden;
-    width: 100%;
     image {
         width: 100%;
         // height: 121.69px;
@@ -67,24 +66,21 @@
 
 .firstspan {
     color: #ffffff;
-    font-family: Helvetica;
-    font-size: 16px;
+    font-size: 1.25rem;
     letter-spacing: 1.2px;
     line-height: 19px;
 }
 
 .span4 {
     color: #ffffff;
-    font-family: Helvetica;
-    font-size: 14px;
+    font-size: 0.875rem;
     letter-spacing: 0.3px;
     line-height: 17px;
 }
 
 .span3 {
     color: #ffffff;
-    font-family: Helvetica;
-    font-size: 14px;
+    font-size: 0.875rem;
     letter-spacing: 0.3px;
     line-height: 17px;
     border: 1px solid rgba(255, 255, 255, 0.41);
@@ -93,8 +89,7 @@
 .span2 {
     width: 74px;
     color: #46d36a;
-    font-family: Helvetica;
-    font-size: 14px;
+    font-size: 0.875rem;
     letter-spacing: 0.4px;
     line-height: 17px;
 }
@@ -102,8 +97,7 @@
 .overlayp {
     width: 195px;
     color: #ffffff;
-    font-family: Helvetica;
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 18px;
 }
 

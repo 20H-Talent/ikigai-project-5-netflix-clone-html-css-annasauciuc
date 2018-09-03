@@ -30,8 +30,7 @@
         li {
             margin-right: 18px;
             color: $text-color;
-            font-family: Helvetica;
-            font-size: 14px;
+            font-size: 0.875rem;
             letter-spacing: 0.5px;
             line-height: 17px;
         }
@@ -79,9 +78,9 @@ input[type="text"] {
 
 ::placeholder {
     width: 139px;
-    color: #7F7F7F;
+    color: $text-color;
     font-family: Helvetica;
-    font-size: 15px;
+    font-size: 0.9375rem;
     letter-spacing: -0.2px;
     line-height: 18px;
 }
@@ -92,6 +91,7 @@ input[type="text"] {
 ::-webkit-input-placeholder {
     text-align: center;
     text-indent: 100%;
+    color: $text-color;
 }
 
 

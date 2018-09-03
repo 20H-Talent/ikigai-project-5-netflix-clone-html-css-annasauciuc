@@ -1,6 +1,6 @@
 footer {
     height: 246px;
-    width: 849px;
+    // width: 100%;
     margin-left: 229px;
     margin-top: 128px;
     margin-bottom: 35px;
@@ -24,7 +24,7 @@ footer {
         width: 116px;
         color: #7F7F7F;
         font-family: Helvetica;
-        font-size: 14px;
+        font-size: 0.875rem;
         letter-spacing: 0.11px;
         line-height: 17px;
     }
@@ -32,7 +32,7 @@ footer {
     li {
         color: #7F7F7F;
         font-family: Helvetica;
-        font-size: 13px;
+        font-size: 0.8125rem;
         letter-spacing: 0.25px;
         line-height: 16px;
         margin-bottom: 15px;
@@ -41,11 +41,6 @@ footer {
     .social:hover {
         transform: scale(1.2);
     }
-
-    .social-1 {
-        @include flexy($dir: row);
-    }
-
     .footer-list {
         @include flexy($dir: row, $just: space-between);
     }
@@ -54,16 +49,16 @@ footer {
         @include flexy($dir: row);
     }
 
-    .social-4 {
-        padding-right: 54px;
-        margin-left: 33px;
-    }
+//     .social-4 {
+//         padding-right: 54px;
+//         margin-left: 33px;
+//     }
 
-    .social-3 {
-        margin-left: 16px;
-    }
+//     .social-3 {
+//         margin-left: 16px;
+//     }
 
-    .social-5 {
-        margin-left: 5px;
-    }
-}
+//     .social-5 {
+//         margin-left: 5px;
+//     }
+ }

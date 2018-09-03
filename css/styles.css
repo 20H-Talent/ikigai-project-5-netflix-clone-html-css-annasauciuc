@@ -335,8 +335,7 @@ body {
   background-color: #141414; }
 
 html.debug {
-  width: 100%;
-  background: transparent url("./../movie-images/00-home-with-hovers.jpg") no-repeat top left;
+  background: transparent url("./../movie-images/00-home.jpg") no-repeat top left;
   background-size: 100%; }
   html.debug body {
     opacity: 0.7; }
@@ -353,8 +352,7 @@ p {
   height: 75px;
   width: 485px;
   color: #ffffff;
-  font-family: Helvetica;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 300;
   letter-spacing: 0.2px;
   line-height: 25px; }
@@ -363,7 +361,7 @@ h3 {
   margin: 0 0 0 59px;
   height: 26px;
   width: 225px;
-  font-size: 22px;
+  font-size: 1.375rem;
   font-weight: bold;
   letter-spacing: 0.22px;
   line-height: 26px; }
@@ -375,8 +373,7 @@ h1 {
   height: 24px;
   width: 203px;
   color: #ffffff;
-  font-family: Helvetica;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: bold;
   letter-spacing: 0.16px;
   line-height: 24px; }
@@ -388,8 +385,7 @@ h2 {
   height: 24px;
   width: 185px;
   color: #ffffff;
-  font-family: Helvetica;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: bold;
   letter-spacing: 0.16px;
   line-height: 24px; }
@@ -412,8 +408,6 @@ progress[value="0"] {
   visibility: hidden; }
 
 .input-container {
-  display: -ms-flexbox;
-  /* IE10 */
   display: flex;
   position: absolute;
   right: 59px;
@@ -432,7 +426,7 @@ progress[value="0"] {
 
 .input-field:focus {
   border: 1px solid #DDDDDD;
-  background-color: #1D1C1D; }
+  background: transparent; }
 
 input[type="text"] {
   background: transparent;
@@ -440,9 +434,9 @@ input[type="text"] {
 
 ::placeholder {
   width: 139px;
-  color: #7F7F7F;
+  color: white;
   font-family: Helvetica;
-  font-size: 15px;
+  font-size: 0.9375rem;
   letter-spacing: -0.2px;
   line-height: 18px; }
 
@@ -488,7 +482,6 @@ input[type="text"] {
   height: 19px;
   width: 28px;
   color: #FFFFFF;
-  font-family: Helvetica;
   font-size: 16px;
   font-weight: bold;
   letter-spacing: 0.16px;
@@ -539,8 +532,7 @@ button:hover {
   margin-bottom: 35px;
   /* Hide horizontal scrollbar */
   overflow-x: scroll;
-  overflow-y: hidden;
-  width: 100%; }
+  overflow-y: hidden; }
   .row image {
     width: 100%; }
 
@@ -554,22 +546,19 @@ button:hover {
 
 .firstspan {
   color: #ffffff;
-  font-family: Helvetica;
-  font-size: 16px;
+  font-size: 1.25rem;
   letter-spacing: 1.2px;
   line-height: 19px; }
 
 .span4 {
   color: #ffffff;
-  font-family: Helvetica;
-  font-size: 14px;
+  font-size: 0.875rem;
   letter-spacing: 0.3px;
   line-height: 17px; }
 
 .span3 {
   color: #ffffff;
-  font-family: Helvetica;
-  font-size: 14px;
+  font-size: 0.875rem;
   letter-spacing: 0.3px;
   line-height: 17px;
   border: 1px solid rgba(255, 255, 255, 0.41); }
@@ -577,16 +566,14 @@ button:hover {
 .span2 {
   width: 74px;
   color: #46d36a;
-  font-family: Helvetica;
-  font-size: 14px;
+  font-size: 0.875rem;
   letter-spacing: 0.4px;
   line-height: 17px; }
 
 .overlayp {
   width: 195px;
   color: #ffffff;
-  font-family: Helvetica;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 18px; }
 
 .photo-overlay {
@@ -642,8 +629,7 @@ button:hover {
     .top-nav nav li {
       margin-right: 18px;
       color: #ffffff;
-      font-family: Helvetica;
-      font-size: 14px;
+      font-size: 0.875rem;
       letter-spacing: 0.5px;
       line-height: 17px; }
 
@@ -682,16 +668,17 @@ input[type="text"] {
 
 ::placeholder {
   width: 139px;
-  color: #7F7F7F;
+  color: #ffffff;
   font-family: Helvetica;
-  font-size: 15px;
+  font-size: 0.9375rem;
   letter-spacing: -0.2px;
   line-height: 18px; }
 
 /* webkit solution */
 ::-webkit-input-placeholder {
   text-align: center;
-  text-indent: 100%; }
+  text-indent: 100%;
+  color: #ffffff; }
 
 /* mozilla solution - this is for firefox 18+ */
 ::-moz-placeholder {
@@ -703,7 +690,6 @@ input[type="text"] {
 
 footer {
   height: 246px;
-  width: 849px;
   margin-left: 229px;
   margin-top: 128px;
   margin-bottom: 35px; }
@@ -720,21 +706,18 @@ footer {
     width: 116px;
     color: #7F7F7F;
     font-family: Helvetica;
-    font-size: 14px;
+    font-size: 0.875rem;
     letter-spacing: 0.11px;
     line-height: 17px; }
   footer li {
     color: #7F7F7F;
     font-family: Helvetica;
-    font-size: 13px;
+    font-size: 0.8125rem;
     letter-spacing: 0.25px;
     line-height: 16px;
     margin-bottom: 15px; }
   footer .social:hover {
     transform: scale(1.2); }
-  footer .social-1 {
-    display: flex;
-    flex-direction: row; }
   footer .footer-list {
     display: flex;
     flex-direction: row;
@@ -742,13 +725,6 @@ footer {
   footer .social-1 {
     display: flex;
     flex-direction: row; }
-  footer .social-4 {
-    padding-right: 54px;
-    margin-left: 33px; }
-  footer .social-3 {
-    margin-left: 16px; }
-  footer .social-5 {
-    margin-left: 5px; }
 
 header {
   background: url("./../movie-images/background.svg") no-repeat top center;

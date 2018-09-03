@@ -7,23 +7,20 @@
   }
 
 body {
-    // height: 2572px;
-    // width: 1440px;
-    // width: calc(100% - 60px);
-    // height:auto;
-    // width: 90%;
+    
     
     color: $text-color;
     font-family: $font-family;
     background-color: $background-body;
 }
-// html.debug {
-//     background: transparent url("./../movie-images/01-search.jpg") no-repeat top left;
-//     background-size: 100%;
-//     body {
-//         opacity: 0.7;
-//     }
-// }
+ html.debug {
+    // background: transparent url("./../movie-images/01-search.jpg") no-repeat top left;
+background-color: $background-body;
+     background-size: 100%;
+    body {
+         opacity: 0.7;
+    }
+ }
 a {
     text-decoration: none;
     color: white;

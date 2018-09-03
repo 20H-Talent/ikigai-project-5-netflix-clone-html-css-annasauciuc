@@ -25,6 +25,12 @@ body {
   font-family: Helvetica;
   background-color: #141414; }
 
+html.debug {
+  background-color: #141414;
+  background-size: 100%; }
+  html.debug body {
+    opacity: 0.7; }
+
 a {
   text-decoration: none;
   color: white; }
@@ -76,8 +82,7 @@ progress[value="0"] {
     .top-nav nav li {
       margin-right: 18px;
       color: #ffffff;
-      font-family: Helvetica;
-      font-size: 14px;
+      font-size: 0.875rem;
       letter-spacing: 0.5px;
       line-height: 17px; }
 
@@ -101,6 +106,7 @@ a.icon {
   bottom: -7px; }
 
 .input-field {
+  background: transparent;
   height: 34px;
   width: 268px;
   outline: none; }
@@ -118,7 +124,7 @@ input[type="text"] {
   width: 139px;
   color: #7F7F7F;
   font-family: Helvetica;
-  font-size: 15px;
+  font-size: 0.9375rem;
   letter-spacing: -0.2px;
   line-height: 18px; }
 
@@ -191,14 +197,13 @@ footer {
     height: 17px;
     width: 116px;
     color: #7F7F7F;
-    font-family: Helvetica;
-    font-size: 14px;
+    font-size: 0.875rem;
     letter-spacing: 0.11px;
     line-height: 17px; }
   footer li {
     color: #7F7F7F;
     font-family: Helvetica;
-    font-size: 13px;
+    font-size: 0.8125rem;
     letter-spacing: 0.25px;
     line-height: 16px;
     margin-bottom: 15px; }
