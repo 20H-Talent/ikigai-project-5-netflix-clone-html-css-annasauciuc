@@ -14,9 +14,10 @@ body {
 
 html.debug {
     // width: 100%;
-     background: transparent url("./../movie-images/00-home.jpg") no-repeat top left;
+    // background: transparent url("./../movie-images/00-home.jpg") no-repeat top left;
     background-size: 100%;
-    // background-color: $background-body;
+
+     background-color: $background-body;
 
     body {
         opacity: 0.7;
@@ -93,6 +94,7 @@ h2 {
 progress[value] {
     /* Reset the default appearance */
     @extend %appearence;
+
     height: 4px;
     width: 132px;
     margin-left: 44px;
@@ -110,100 +112,3 @@ progress[value="0"] {
     visibility: hidden;
 }
 
-.input-container {
-   @include flexy();
-    position: absolute;
-    right: 59px;
-    top: 17px;
-}
-
-.icon {
-    padding: 10px;
-    position: absolute;
-    right: 230px;
-    bottom: -4px;
-}
-
-.input-field {
-    height: 34px;
-    width: 268px;
-
-    // border: 1px solid #DDDDDD;
-    // background-color: #1D1C1D;
-    outline: none;
-}
-
-.input-field:focus {
-    border: 1px solid #DDDDDD;
-    background: transparent;
-}
-
-input[type="text"] {
-    background: transparent;
-    border: none;
-}
-
-::placeholder {
-    // margin-left: 80px;
-    width: 139px;
-    color: white;
-    font-family: Helvetica;
-    font-size: 0.9375rem;
-    letter-spacing: -0.2px;
-    line-height: 18px;
-}
-
-// ::-moz-placeholder,
-//  :-moz-placeholder {
-//     text-align: right !important;
-// }
-
-/* webkit solution */
-
-::-webkit-input-placeholder {
-    text-align: center;
-}
-
-/* mozilla solution - this is for firefox 18+ */
-
-::-moz-placeholder {
-    text-align: right;
-}
-
-/* mozilla solution - this is for firefox 18- */
-
-:-moz-placeholder {
-    text-align: right;
-}
-
-// .wrapper input[type="text"] {
-//     position: relative;
-// }
-// input {
-//     font-family: 'FontAwesome';
-// }
-// /* This is for the placeholder
-// .wrapper:before {
-//     font-family: 'FontAwesome';
-//     color: red;
-//     position: relative;
-//     left: -5px;
-//     content: "\f002";
-// }
-// form {
-//     position: relative;
-// }
-// input[type=text] {
-//     font-family: 'FontAwesome';
-//     height: 34px;
-//     width: 268px;
-//     border: 1px solid #DDDDDD;
-//     background-color: #1D1C1D;
-//     position: absolute;
-// }
-// .search {
-//     // position: absolute;
-//     right: 302px;
-//     top: 24px;
-//     z-index: 2;
-// }

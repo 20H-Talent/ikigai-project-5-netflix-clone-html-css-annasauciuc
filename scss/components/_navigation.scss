@@ -1,32 +1,42 @@
 .top-nav {
     @include flexy($dir: row);
+
     &:hover {
         background-color: #141414;
     }
+
     // position: fixed;
     // top: 0;
     a {
         text-decoration: none;
         color: white;
+
         &:hover {
             opacity: 0.5;
+
             @extend %transition;
         }
     }
+
     .active {
         font-weight: bold;
     }
+
     #nav-item4 {
         margin-right: 15px;
     }
+
     nav {
         @include flexy($dir: row);
+
         ul {
             margin-left: 45px;
             align-self: center;
             margin-top: 19px;
+
             @include flexy($dir: row, $align: center);
         }
+
         li {
             margin-right: 18px;
             color: $text-color;
@@ -44,6 +54,7 @@
 
 .input-container {
     display: -ms-flexbox;
+
     /* IE10 */
     display: flex;
     position: absolute;
@@ -68,12 +79,16 @@ a.icon {
 .input-field:focus {
     border: 1px solid #DDDDDD;
     background-color: #1D1C1D;
+
+    @include placeholder(white, 10px);
 }
 
 input[type="text"] {
     direction: rtl;
     background: transparent;
     border: none;
+
+    @include placeholder(white, 10px);
 }
 
 ::placeholder {
@@ -83,27 +98,36 @@ input[type="text"] {
     font-size: 0.9375rem;
     letter-spacing: -0.2px;
     line-height: 18px;
+    @include placeholder(white, 10px);
 }
 
-
-/* webkit solution */
-
-::-webkit-input-placeholder {
-    text-align: center;
-    text-indent: 100%;
-    color: $text-color;
+input::-webkit-input-placeholder {
+    color: white;
 }
 
-
-/* mozilla solution - this is for firefox 18+ */
-
-::-moz-placeholder {
-    text-align: right;
+input:-moz-placeholder {
+    color: white;
 }
 
-
-/* mozilla solution - this is for firefox 18- */
-
-:-moz-placeholder {
-    text-align: right;
+input::-moz-placeholder {
+    color:  white;
 }
+
+input:-ms-input-placeholder {
+    color: white;
+}
+
+/* focus */
+input:focus::-webkit-input-placeholder {
+    color: #eee;
+}
+
+input:focus:-moz-placeholder {
+    color: #eee;
+} /* FF 4-18 */
+input:focus::-moz-placeholder {
+    color: #eee;
+} /* FF 19+ */
+input:focus:-ms-input-placeholder {
+    color: #eee;
+} /* IE 10+ */

@@ -1,15 +1,34 @@
-@mixin flexy($disp: flex, $dir: null, $wrap: null, $just: null, $align: null, $align-s:null) {
-  display: $disp;
-  flex-direction: $dir;
-  flex-wrap: $wrap;
-  justify-content: $just;
-  align-items: $align;
-  align-self: $align-s;
+@mixin flexy($disp: flex, $dir: null, $wrap: null, $just: null, $align: null, $align-s: null) {
+    display: $disp;
+    flex-direction: $dir;
+    flex-wrap: $wrap;
+    justify-content: $just;
+    align-items: $align;
+    align-self: $align-s;
 }
 
 // Media Queries
 @mixin media($size) {
-  @media (min-width: $size) {
-    @content;
-  }
+    @media (min-width: $size) {
+        @content;
+    }
+}
+
+//Placeholder mixin
+@mixin placeholder($color, $size: "") {
+    &::-webkit-input-placeholder {
+        @content;
+    }
+
+    &:-moz-placeholder {
+        @content;
+    }
+
+    &::-moz-placeholder {
+        @content;
+    }
+
+    &:-ms-input-placeholder {
+        @content;
+    }
 }
