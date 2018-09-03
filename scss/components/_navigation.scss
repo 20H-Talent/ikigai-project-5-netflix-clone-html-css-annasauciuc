@@ -1,94 +1,102 @@
-.top-nav {
-    @include flexy($dir: row);
+// .top-nav {
+//     @include flexy($dir: row);
+
+//     &:hover {
+//         background-color: #141414;
+//     }
+
+// top: 0;
+a {
+    text-decoration: none;
+    color: white;
 
     &:hover {
-        background-color: #141414;
+        opacity: 0.5;
+
+        @extend %transition;
+    }
+}
+
+.active {
+    font-weight: bold;
+    margin-left: 43px;
+}
+
+#nav-item4 {
+    margin-right: 15px;
+}
+
+nav {
+    // @include flexy($dir: row);
+
+    ul {
+        margin-left: 45px;
+        align-self: center;
+        margin-top: 19px;
+
+        @include flexy($dir: row, $align: center);
     }
 
-    // position: fixed;
-    // top: 0;
-    a {
-        text-decoration: none;
-        color: white;
-
-        &:hover {
-            opacity: 0.5;
-
-            @extend %transition;
-        }
-    }
-
-    .active {
-        font-weight: bold;
-    }
-
-    #nav-item4 {
-        margin-right: 15px;
-    }
-
-    nav {
-        @include flexy($dir: row);
-
-        ul {
-            margin-left: 45px;
-            align-self: center;
-            margin-top: 19px;
-
-            @include flexy($dir: row, $align: center);
-        }
-
-        li {
-            margin-right: 18px;
-            color: $text-color;
-            font-size: 0.875rem;
-            letter-spacing: 0.5px;
-            line-height: 17px;
-        }
+    li {
+        margin-right: 18px;
+        color: $text-color;
+        font-size: 0.875rem;
+        letter-spacing: 0.5px;
+        line-height: 17px;
     }
 }
 
 .logo {
-    margin-left: 58px;
-    margin-top: 21px;
+    margin-left: 14px;
 }
 
-.input-container {
-    display: -ms-flexbox;
-
-    /* IE10 */
-    display: flex;
-    position: absolute;
-    right: 59px;
-    top: 17px;
-}
-
-a.icon {
-    z-index: 999;
-    padding: 10px;
-    position: absolute;
-    right: 232px;
-    bottom: -7px;
-}
-
-.input-field {
+form {
+    position: relative;
+    margin-left: auto;
+    margin-right: 29px;
     height: 34px;
     width: 268px;
-    outline: none;
+    display: flex;
+    position: relative;
+    margin-left: auto;
+    margin-right: 29px;
+    height: 34px;
+    width: 268px;
+    justify-content: flex-end;
+
+    label {
+        position: absolute;
+        top: 0;
+        transform: translateY(30%);
+    }
 }
 
-.input-field:focus {
-    border: 1px solid #DDDDDD;
-    background-color: #1D1C1D;
-
-    @include placeholder(white, 10px);
-}
-
-input[type="text"] {
-    direction: rtl;
+#search {
+    padding-left: 30px;
+    height: 34px;
     background: transparent;
     border: none;
 
+    // border: 1px solid #DDDDDD;
+    // background-color: #1D1C1D;
     @include placeholder(white, 10px);
+
+    // width: 268px;
+    width: 0;
+    outline: none;
+
+    &:focus {
+        border: 1px solid #DDDDDD;
+        background-color: #1D1C1D;
+        width: 222px;
+
+        @include placeholder(white, 10px);
+
+        transition: All 1s ease;
+        -webkit-transition: All 1s ease;
+        -moz-transition: All 1s ease;
+        -o-transition: All 1s ease;
+    }
 }
 
 ::placeholder {
@@ -98,36 +106,6 @@ input[type="text"] {
     font-size: 0.9375rem;
     letter-spacing: -0.2px;
     line-height: 18px;
+
     @include placeholder(white, 10px);
 }
-
-input::-webkit-input-placeholder {
-    color: white;
-}
-
-input:-moz-placeholder {
-    color: white;
-}
-
-input::-moz-placeholder {
-    color:  white;
-}
-
-input:-ms-input-placeholder {
-    color: white;
-}
-
-/* focus */
-input:focus::-webkit-input-placeholder {
-    color: #eee;
-}
-
-input:focus:-moz-placeholder {
-    color: #eee;
-} /* FF 4-18 */
-input:focus::-moz-placeholder {
-    color: #eee;
-} /* FF 19+ */
-input:focus:-ms-input-placeholder {
-    color: #eee;
-} /* IE 10+ */

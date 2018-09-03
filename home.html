@@ -37,9 +37,10 @@
                 <div class="top-nav">
                     <nav>
 
-                        <a href="home.html"> <img class="logo" src="icons/netflix-logo.svg" alt="Netflix
-                                    logo"></a>
+                      
                         <ul>
+                                <a href="home.html"> <img class="logo" src="icons/netflix-logo.svg" alt="Netflix
+                                    logo"></a>
                             <li id="nav-item1"> <a class="active" href="#home">Home</a></li>
                             <li id="nav-item2"> <a href="#about">TV Shows</a></li>
                             <li id="nav-item"> <a href="#movies">Movies</a></li>
@@ -47,13 +48,16 @@
                                     Added
                                 </a></li>
                             <li id="nav-item5"> <a href="#my-list">My List</a></li>
-                            <span class="input-container">
-                                <a href="search.html" class="search icon" target="_blank"> <img src="icons/lupa.svg" alt="search icon"></a>
-                                <!-- <i class="fas icon fa-search"></i> -->
-                                <input class="input-field" type="text" placeholder="Title, people,genres" name="usrnm">
-                            </span>
-
                         </ul>
+                            <form action="./search.html" class="form-nav">
+                                <label for="search">
+                                    <img src="icons/lupa.svg" alt="search icon">
+                                </label>
+                                <input type="text" name="search" id="search" placeholder="Titles, people, genres">
+                                <span class="input-span"></span>
+                            </form>
+
+                      
 
                     </nav>
 
@@ -110,9 +114,8 @@
 
                 <div class="original">
                     <div class="photo">
-                        <a href="videodetail.html"> <img class="image-rows" src="movie-images/fishbig.jpg" alt="image
-                                            of
-                                            humans movie movie"></a>
+                        <a href="videodetail.html"> <img class="image-rows" src="movie-images/fishbig.jpg" alt="image of
+humans movie"></a>
                         <div class="photo-overlay">
                             <div class="playicon">
                                 <div class="oval"></div>
@@ -129,7 +132,7 @@
                 </div>
                 <div class="original">
                     <div class="photo">
-                        <a href="vclasseodetail.html"> <img class="image-rows" src="movie-images/insatiablebig.svg" alt="image
+                        <a href="videodetail.html"> <img class="image-rows" src="movie-images/insatiablebig.svg" alt="image
                                             of
                                             humans movie movie"></a>
                         <div class="photo-overlay">
@@ -169,14 +172,11 @@
                 <div class="original">
                     <div class="photo">
                         <a href="videodetail.html">
-                            <img class="image-rows" src="movie-images/fishbig.jpg" alt="image
-                                                            of
-                                                            humans movie movie"></a>
+                            <img class="image-rows" src="movie-images/fishbig.jpg" alt="image of humans movie movie"></a>
                         <div class="photo-overlay">
                             <div class="playicon">
                                 <div class="oval"></div>
-                                <i class="fas fa
-                                                                fa-play"></i></div>
+                                <i class="fas fa fa-play"></i></div>
                             <span class="firstspan">Insatiable</span>
                             <div class="overlay-row">
                                 <span class="span2">98% Match </span>
@@ -193,16 +193,11 @@
                 <div class="original">
                     <div class="photo">
                         <a href="videodetail.html">
-                            <img class="image-rows" src="movie-images/insatiablebig.svg" alt="image
-                                                                    of
-                                                                    humans movie
-                                                                    movie"></a>
+                            <img class="image-rows" src="movie-images/insatiablebig.svg" alt="image of humans movie"></a>
                         <div class="photo-overlay">
                             <div class="playicon">
                                 <div class="oval"></div>
-                                <i class="fas
-   
-                                                                        fa-play"></i></div>
+                                <i class="fas fa-play"></i></div>
                             <span class="firstspan">Insatiable</span>
                             <div class="overlay-row">
                                 <span class="span2">98% Match
@@ -418,16 +413,12 @@
                     <div class="photo">
                         <a href="videodetail.html">
                             <img class="image-rows" src="movie-images/insatiablebig.svg" alt="image
-                                                                                                                            of
-              humans
-                                                                                                                          
-                                                                                                                            movie"></a>
+of humans movie"></a>
                         <div class="photo-overlay">
                             <div class="playicon">
                                 <div class="oval"></div>
                                 <i class="fas
-                                                                                                                                fa
-                                                                                                                                fa-play"></i></div>
+fa fa-play"></i></div>
                             <span class="firstspan">Insatiable</span>
                             <div class="overlay-row">
                                 <span class="span2">98% Match
@@ -1206,7 +1197,7 @@
                     </li>
                 </ul>
                 <div class="footer-list">
-                    <ul  class="social-2">
+                    <ul class="social-2">
                         <li>
                             <a href="https://google.es" target="_blank" class="list-1">About this project
                             </a>

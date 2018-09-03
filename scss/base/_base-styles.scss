@@ -14,10 +14,12 @@ body {
 
 html.debug {
     // width: 100%;
-    // background: transparent url("./../movie-images/00-home.jpg") no-repeat top left;
+    background: transparent url("./../movie-images/00-home-with-hovers.jpg") no-repeat top left;
+
+    //   background: transparent url("./../movie-images/00-home.jpg") no-repeat top left;
     background-size: 100%;
 
-     background-color: $background-body;
+    //  background-color: $background-body;
 
     body {
         opacity: 0.7;
@@ -28,11 +30,6 @@ a {
     text-decoration: none;
     color: white;
 }
-
-// .container {
-//     @include flexy($dir:column);
-//     margin: auto;
-// }
 
 .row {
     a {
@@ -111,4 +108,3 @@ progress::-webkit-progress-value {
 progress[value="0"] {
     visibility: hidden;
 }
-

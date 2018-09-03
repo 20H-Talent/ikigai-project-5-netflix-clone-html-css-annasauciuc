@@ -4,7 +4,7 @@ progress[value], progress::-webkit-progress-value {
   appearance: none;
   border: none; }
 
-button:hover, .top-nav a:hover {
+button:hover, a:hover {
   -webkit-transition: background-color 1000ms linear;
   -moz-transition: background-color 1000ms linear;
   -o-transition: background-color 1000ms linear;
@@ -335,8 +335,8 @@ body {
   background-color: #141414; }
 
 html.debug {
-  background-size: 100%;
-  background-color: #141414; }
+  background: transparent url("./../movie-images/00-home-with-hovers.jpg") no-repeat top left;
+  background-size: 100%; }
   html.debug body {
     opacity: 0.7; }
 
@@ -459,7 +459,7 @@ button:hover {
   background-color: white; }
 
 .image-header {
-  margin-top: 255px;
+  margin-top: 253px;
   height: 74.31px;
   width: 100%;
   margin-bottom: 28px;
@@ -470,7 +470,7 @@ button:hover {
   flex-direction: row;
   overflow-x: scroll;
   overflow-y: hidden;
-  margin-bottom: 60px;
+  margin-bottom: 45px;
   margin-left: 58px;
   /* Hide horizontal scrollbar */ }
 
@@ -491,7 +491,7 @@ button:hover {
   display: flex;
   flex-direction: row;
   margin-left: 60px;
-  margin-bottom: 35px;
+  margin-bottom: 20px;
   /* Hide horizontal scrollbar */
   overflow-x: scroll;
   overflow-y: hidden; }
@@ -564,69 +564,62 @@ button:hover {
   position: relative;
   overflow: hidden; }
 
-.top-nav {
+a {
+  text-decoration: none;
+  color: white; }
+  a:hover {
+    opacity: 0.5; }
+
+.active {
+  font-weight: bold;
+  margin-left: 43px; }
+
+#nav-item4 {
+  margin-right: 15px; }
+
+nav ul {
+  margin-left: 45px;
+  align-self: center;
+  margin-top: 19px;
   display: flex;
-  flex-direction: row; }
-  .top-nav:hover {
-    background-color: #141414; }
-  .top-nav a {
-    text-decoration: none;
-    color: white; }
-    .top-nav a:hover {
-      opacity: 0.5; }
-  .top-nav .active {
-    font-weight: bold; }
-  .top-nav #nav-item4 {
-    margin-right: 15px; }
-  .top-nav nav {
-    display: flex;
-    flex-direction: row; }
-    .top-nav nav ul {
-      margin-left: 45px;
-      align-self: center;
-      margin-top: 19px;
-      display: flex;
-      flex-direction: row;
-      align-items: center; }
-    .top-nav nav li {
-      margin-right: 18px;
-      color: #ffffff;
-      font-size: 0.875rem;
-      letter-spacing: 0.5px;
-      line-height: 17px; }
+  flex-direction: row;
+  align-items: center; }
+nav li {
+  margin-right: 18px;
+  color: #ffffff;
+  font-size: 0.875rem;
+  letter-spacing: 0.5px;
+  line-height: 17px; }
 
 .logo {
-  margin-left: 58px;
-  margin-top: 21px; }
+  margin-left: 14px; }
 
-.input-container {
-  display: -ms-flexbox;
-  /* IE10 */
-  display: flex;
-  position: absolute;
-  right: 59px;
-  top: 17px; }
-
-a.icon {
-  z-index: 999;
-  padding: 10px;
-  position: absolute;
-  right: 232px;
-  bottom: -7px; }
-
-.input-field {
+form {
+  position: relative;
+  margin-left: auto;
+  margin-right: 29px;
   height: 34px;
-  width: 268px;
-  outline: none; }
+  width: 268px; }
+  form label {
+    position: absolute;
+    top: 0;
+    transform: translateY(30%); }
 
-.input-field:focus {
-  border: 1px solid #DDDDDD;
-  background-color: #1D1C1D; }
-
-input[type="text"] {
-  direction: rtl;
+#search {
+  padding-left: 30px;
+  height: 34px;
   background: transparent;
-  border: none; }
+  border: none;
+  width: 0;
+  outline: none; }
+  #search:focus {
+    border: 1px solid #DDDDDD;
+    background-color: #1D1C1D;
+    width: 222px;
+    transition: All 1s ease;
+    -webkit-transition: All 1s ease;
+    -moz-transition: All 1s ease;
+    -o-transition: All 1s ease; }
 
 ::placeholder {
   width: 139px;
@@ -636,38 +629,10 @@ input[type="text"] {
   letter-spacing: -0.2px;
   line-height: 18px; }
 
-input::-webkit-input-placeholder {
-  color: white; }
-
-input:-moz-placeholder {
-  color: white; }
-
-input::-moz-placeholder {
-  color: white; }
-
-input:-ms-input-placeholder {
-  color: white; }
-
-/* focus */
-input:focus::-webkit-input-placeholder {
-  color: #eee; }
-
-input:focus:-moz-placeholder {
-  color: #eee; }
-
-/* FF 4-18 */
-input:focus::-moz-placeholder {
-  color: #eee; }
-
-/* FF 19+ */
-input:focus:-ms-input-placeholder {
-  color: #eee; }
-
-/* IE 10+ */
 footer {
   height: 246px;
   margin-left: 229px;
-  margin-top: 128px;
+  margin-top: 113px;
   margin-bottom: 35px; }
   footer a:hover {
     text-decoration: underline; }
