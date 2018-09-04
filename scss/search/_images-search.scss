@@ -1,22 +1,24 @@
-.image-rows {
-    margin-right: 5px;
-}
-
 .row {
     @include flexy($dir: row);
 
     margin-bottom: 39px;
-    overflow-x: hidden;
 
-    /* Hide horizontal scrollbar */
-
-    overflow-y: hidden;
+    // overflow-x: hidden;
+    // overflow-y: hidden;
     overflow-x: scroll;
     width: 100%;
+
+    .image-rows {
+        margin-right: 5px;
+    }
 
     image {
         height: 121.69px;
         width: 216px;
+    }
+
+    ::-webkit-scrollbar {
+        visibility: hidden;
     }
 }
 

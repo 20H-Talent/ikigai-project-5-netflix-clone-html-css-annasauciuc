@@ -22,19 +22,13 @@ footer {
         margin-left: 0;
         height: 17px;
         width: 116px;
-        color: #7F7F7F;
-        font-family: Helvetica;
-        font-size: 0.875rem;
-        letter-spacing: 0.11px;
-        line-height: 17px;
+
+        @include font($size: 0.875rem, $space: 0.11px, $line: 17px, $color:$color-hover);
     }
 
     li {
-        color: #7F7F7F;
-        font-family: Helvetica;
-        font-size: 0.8125rem;
-        letter-spacing: 0.25px;
-        line-height: 16px;
+        @include font($size: 0.8125rem, $space: 0.25px, $line: 16px, $color:$color-hover);
+
         margin-bottom: 15px;
     }
 

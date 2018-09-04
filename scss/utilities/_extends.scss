@@ -15,9 +15,11 @@
 }
 
 %transition {
-    -webkit-transition: background-color 2s linear;
-    -moz-transition: background-color 2s linear;
-    -o-transition: background-color 2s linear;
-    -ms-transition: background-color 2s linear;
-    transition: background-color 2s linear;
+   
+    -webkit-transition: background-color 2s  ease-in;
+    -moz-transition: background-color 2s  ease-in;
+    -o-transition: background-color 2s  ease-in;
+    -ms-transition: background-color 2s  ease-in;
+    transition: background-color 2s  ease-in;
 }
+

@@ -55,45 +55,34 @@
     box-sizing: border-box;
     height: 35px;
     width: 35px;
-    border: 1px solid #ffffff;
+    border: 1px solid $text-color;
     background-color: rgba(0, 0, 0, 0.51);
 }
 
 .firstspan {
-    color: #ffffff;
-    font-size: 1.25rem;
-    letter-spacing: 1.2px;
-    line-height: 19px;
+    @include font($size: 1.25rem, $space: 1.2px, $line: 19px, $color: $text-color);
 }
 
 .span4 {
-    color: #ffffff;
-    font-size: 0.875rem;
-    letter-spacing: 0.3px;
-    line-height: 17px;
+    @include font($size: 0.875rem, $space: 0.3px, $line: 17px, $color: $text-color);
 }
 
 .span3 {
-    color: #ffffff;
-    font-size: 0.875rem;
-    letter-spacing: 0.3px;
-    line-height: 17px;
+    @include font($size: 0.875rem, $space: 0.3px, $line: 17px, $color: $text-color);
+
     border: 1px solid rgba(255, 255, 255, 0.41);
 }
 
 .span2 {
+    @include font($size: 0.875rem, $space: 0.4px, $line: 17px, $color: #46d36a);
+
     width: 74px;
-    color: #46d36a;
-    font-size: 0.875rem;
-    letter-spacing: 0.4px;
-    line-height: 17px;
 }
 
 .overlayp {
     width: 195px;
-    color: #ffffff;
-    font-size: 0.875rem;
-    line-height: 18px;
+
+    @include font($size: 0.875rem, $line: 18px, $color: $text-color);
 }
 
 .photo-overlay {

@@ -32,3 +32,13 @@
         @content;
     }
 }
+
+@mixin font($family: "Helvetica", $size: null, $weight: null, $line: null, $space: null, $color: null) {
+    color: $color;
+    font-family: $family;
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $line;
+    letter-spacing: $space;
+    @content
+}

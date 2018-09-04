@@ -36,11 +36,9 @@ nav {
     }
 
     li {
+        @include font($size: 0.875rem, $space: 0.5px, $line: 17px, $color: $text-color);
+
         margin-right: 18px;
-        color: $text-color;
-        font-size: 0.875rem;
-        letter-spacing: 0.5px;
-        line-height: 17px;
     }
 }
 
@@ -84,5 +82,5 @@ nav {
 
 input[type="search"] {
     -webkit-appearance: textfield;
-    color: white;
+    color: $text-color;
 }
