@@ -570,8 +570,8 @@ button:hover {
 .oval-1 {
   border-radius: 50%;
   box-sizing: border-box;
-  height: 23.73px;
-  width: 23.72px;
+  height: 19.73px;
+  width: 19.72px;
   border: 1px solid #ffffff;
   background-color: rgba(0, 0, 0, 0.51); }
 
@@ -626,11 +626,10 @@ button:hover {
     opacity: 1; }
 
 .fa-1 {
-  height: 7.45px;
-  width: 8.81px;
+  font-size: 9px;
   color: red;
   position: absolute;
-  top: 3px;
+  top: 5px;
   left: 7px; }
 
 .playicon-1 {
