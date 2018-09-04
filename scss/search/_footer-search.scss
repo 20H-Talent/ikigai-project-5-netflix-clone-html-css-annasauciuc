@@ -23,6 +23,7 @@ footer {
         height: 17px;
         width: 116px;
         color: #7F7F7F;
+        font-family: Helvetica;
         font-size: 0.875rem;
         letter-spacing: 0.11px;
         line-height: 17px;
@@ -40,23 +41,23 @@ footer {
     .social:hover {
         transform: scale(1.2);
     }
-
     .footer-list {
-        @include flexy($dir: row, $just: space-around);
+        @include flexy($dir: row, $just: space-between);
     }
 
     .social-1 {
         @include flexy($dir: row);
     }
 
-    // .social-4 {
-    //     padding-right: 54px;
-    //     margin-left: 33px;
-    // }
-    // .social-3 {
-    //     margin-left: 16px;
-    // }
-    // .social-5 {
-    //     margin-left: 5px;
-    // }
-}
+     .social-4 {
+        padding-right: 45px;
+    }
+
+     .social-3 {
+        padding-right: 18px;
+    }
+
+//     .social-5 {
+//         margin-left: 5px;
+//     }
+ }
