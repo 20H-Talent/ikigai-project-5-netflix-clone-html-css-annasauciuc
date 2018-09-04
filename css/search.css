@@ -5,11 +5,11 @@ progress[value], progress::-webkit-progress-value {
   border: none; }
 
 a:hover {
-  -webkit-transition: background-color 1000ms linear;
-  -moz-transition: background-color 1000ms linear;
-  -o-transition: background-color 1000ms linear;
-  -ms-transition: background-color 1000ms linear;
-  transition: background-color 1000ms linear; }
+  -webkit-transition: background-color 2s linear;
+  -moz-transition: background-color 2s linear;
+  -o-transition: background-color 2s linear;
+  -ms-transition: background-color 2s linear;
+  transition: background-color 2s linear; }
 
 * {
   -webkit-box-sizing: border-box;
@@ -26,7 +26,6 @@ body {
   background-color: #141414; }
 
 html.debug {
-  background: transparent url("./../movie-images/01-search.jpg") no-repeat top left;
   background-color: #141414;
   background-size: 100%; }
   html.debug body {
