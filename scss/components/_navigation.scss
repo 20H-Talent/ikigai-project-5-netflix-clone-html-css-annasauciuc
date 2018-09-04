@@ -1,86 +1,95 @@
-// .top-nav {
-//     @include flexy($dir: row);
+.top-nav {
+    @include flexy($dir: row);
 
-//     &:hover {
-//         background-color: #141414;
-//     }
-
-// top: 0;
-a {
-    text-decoration: none;
-    color: white;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    width: 100%;
 
     &:hover {
-        opacity: 0.5;
-
-        @extend %transition;
-    }
-}
-
-nav {
-    .active {
-        font-weight: bold;
-        margin-left: 44px;
+        background-color: rgba(0, 0, 0, 0.51);
     }
 
-    #nav-item4 {
-        margin-right: 15px;
+    a {
+        text-decoration: none;
+        color: white;
+
+        &:hover {
+            opacity: 0.5;
+
+            @extend %transition;
+        }
     }
 
-    ul {
-        margin-left: 45px;
-        align-self: center;
-        margin-top: 21px;
+    nav {
+        @include flexy;
 
-        @include flexy($dir: row, $align: center);
+        width: 100%;
+
+        .active {
+            font-weight: bold;
+            margin-left: 44px;
+        }
+
+        #nav-item4 {
+            margin-right: 15px;
+        }
+
+        ul {
+            margin-left: 45px;
+            align-self: center;
+            margin-top: 21px;
+
+            @include flexy($dir: row, $align: center);
+        }
+
+        li {
+            @include font($size: 0.875rem, $space: 0.5px, $line: 17px, $color: $text-color);
+        }
     }
 
-    li {
-        @include font($size: 0.875rem, $space: 0.5px, $line: 17px, $color: $text-color);
-
-        margin-right: 18px;
+    .logo {
+        margin-left: 13px;
     }
-}
 
-.logo {
-    margin-left: 13px;
-}
+    #custom-search {
+        margin-left: auto;
 
-.custom-search {
-    position: absolute;
-    right: 52px;
-    top: 14px;
-}
+        // position: absolute;
+        margin-right: 52px;
+        margin-top: 14px;
+    }
 
-#express-form-typeahead {
-    background-color: transparent;
-    background-image: url(./../icons/lupa.svg);
-    background-position: 5px center;
-    background-repeat: no-repeat;
-    border: none;
-    color: white;
-    cursor: pointer;
-    height: 37px;
-    padding: 0 0 0 34px;
-    position: relative;
-    -webkit-transition: width 800ms ease, background 800ms ease-out;
-    transition: width 800ms ease, background 800ms ease-out;
-    width: 0;
-}
+    #express-form-typeahead {
+        background-color: transparent;
+        background-image: url(./../icons/lupa.svg);
+        background-position: 5px center;
+        background-repeat: no-repeat;
+        border: none;
+        color: white;
+        cursor: pointer;
+        height: 37px;
+        padding: 0 0 0 34px;
+        position: relative;
+        -webkit-transition: width 800ms ease, background 800ms ease-out;
+        transition: width 800ms ease, background 800ms ease-out;
+        width: 0;
+    }
 
-#express-form-typeahead:focus {
- border: 1px solid #DDDDDD;
-    background-color: #1D1C1D;
-    cursor: text;
-    outline: 0;
-    width: 268px;
-}
+    #express-form-typeahead:focus {
+        border: 1px solid #DDDDDD;
+        background-color: #1D1C1D;
+        cursor: text;
+        outline: 0;
+        width: 268px;
+    }
 
-.search-btn {
-    display: none;
-}
+    .search-btn {
+        display: none;
+    }
 
-input[type="search"] {
-    -webkit-appearance: textfield;
-    color: $text-color;
+    input[type="search"] {
+        -webkit-appearance: textfield;
+        color: $text-color;
+    }
 }

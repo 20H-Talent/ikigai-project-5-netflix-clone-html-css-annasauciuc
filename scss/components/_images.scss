@@ -60,6 +60,7 @@
 }
 
 .firstspan {
+    margin-left: 11px;
     @include font($size: 1.25rem, $space: 1.2px, $line: 19px, $color: $text-color);
 }
 
@@ -81,16 +82,19 @@
 
 .overlayp {
     width: 195px;
+    margin-left: 11px;
 
     @include font($size: 0.875rem, $line: 18px, $color: $text-color);
 }
 
 .photo-overlay {
-    position: absolute;
-    bottom: 43px;
-    left: 12px;
+    @include flexy($dir: column, $just: flex-end);
 
-    @include flexy($dir: column);
+    position: absolute;
+    width: 100%;
+    bottom: 18px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .photo-overlay {
@@ -101,9 +105,10 @@
         opacity: 1;
     }
 }
-
+.overlay-row{
+    margin-left: 11px;
+}
 .fa {
-   
     color: red;
     position: absolute;
     top: 9px;
@@ -112,9 +117,13 @@
 
 .playicon {
     position: relative;
+    margin-left: 11px;
 }
 
 .photo {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
     position: relative;
     overflow: hidden;
 }
@@ -123,13 +132,14 @@
 .oval-1 {
     border-radius: 50%;
     box-sizing: border-box;
-    	height: 19.73px;	width: 19.72px;
+    height: 19.73px;
+    width: 19.72px;
     border: 1px solid $text-color;
     background-color: rgba(0, 0, 0, 0.51);
 }
 
 .firstspan-1 {
-   
+    margin-left: 11px;
     @include font($size: 13px, $space: 0.2px, $line: 17px, $color: $text-color);
 }
 
@@ -149,19 +159,22 @@
     height: 17px;
     width: 74px;
 }
-
+.overlay-row-1{
+    margin-left: 11px;
+}
 .overlayp-1 {
-   
-
     @include font($size: 11px, $line: 14px, $color: $text-color);
+    margin-left: 11px;
 }
 
 .photo-overlay-1 {
     position: absolute;
     bottom: 20px;
-    left: 4px;
-
-    @include flexy($dir: column);
+ 
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+height:100%;
+    @include flexy($dir: column, $just:flex-end);
 }
 
 .photo-overlay-1 {
@@ -183,6 +196,7 @@
 
 .playicon-1 {
     position: relative;
+    margin-left: 11px;
 }
 
 .photo-1 {

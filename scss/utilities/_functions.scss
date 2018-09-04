@@ -1,0 +1,9 @@
+@function get-vw($target) {
+    $vw-context: (1440 * 0.01) * 1px;
+    @return ($target / $vw-context) * 1vw;
+  }
+  // selector {
+  //   /*** Fallback ***/
+  //   font-size: 20px; /*** Responsive ***/
+  //   font-size: get-vw(20px) vw;// asi se aplica la funcion al selector
+  // }

@@ -15,9 +15,10 @@ body {
 html.debug {
     // width: 100%;
     // background: transparent url("./../movie-images/00-home-with-hovers.jpg") no-repeat top left;
-   //  background: transparent url("./../movie-images/00-home.jpg") no-repeat top left;
+    //  background: transparent url("./../movie-images/00-home.jpg") no-repeat top left;
     background-size: 100%;
-  //  background-color: $background-body;
+
+    //  background-color: $background-body;
 
     body {
         opacity: 0.7;
@@ -26,7 +27,7 @@ html.debug {
 
 a {
     text-decoration: none;
-    color:$text-color;
+    color: $text-color;
 }
 
 .row {
@@ -40,26 +41,29 @@ p {
     height: 75px;
     width: 485px;
 
-    @include font($size: 1.25rem, $space: 0.2px, $line: 25px, $weight: 300, $color:$text-color);
+    @include font($size: 1.25rem, $space: 0.2px, $line: 25px, $weight: 300, $color: $text-color);
 }
 
 h3 {
     margin: 0 0 0 59px;
-    @include font($size: 1.375rem, $space: 0.22px, $line: 26px, $weight: bold, $color:$text-color);
+
+    @include font($size: 1.375rem, $space: 0.22px, $line: 26px, $weight: bold, $color: $text-color);
 }
 
 h1 {
     margin-left: 58px;
     margin-top: 62px;
     margin-bottom: 8px;
-    @include font($size: 1.25rem, $space: 0.16px, $line: 24px, $weight: bold,$color:$text-color);
+
+    @include font($size: 1.25rem, $space: 0.16px, $line: 24px, $weight: bold, $color: $text-color);
 }
 
 h2 {
     margin-bottom: 10px;
     margin-left: 58px;
     margin-top: 0;
-    @include font($size: 1.25rem, $space: 0.16px, $line: 24px, $weight: bold,$color:$text-color);
+
+    @include font($size: 1.25rem, $space: 0.16px, $line: 24px, $weight: bold, $color: $text-color);
 }
 
 .first-line {

@@ -4,7 +4,7 @@ progress[value], progress::-webkit-progress-value {
   appearance: none;
   border: none; }
 
-a:hover {
+.top-nav a:hover {
   -webkit-transition: background-color 2s  ease-in;
   -moz-transition: background-color 2s  ease-in;
   -o-transition: background-color 2s  ease-in;
@@ -55,68 +55,72 @@ progress::-webkit-progress-value {
 progress[value="0"] {
   visibility: hidden; }
 
-a {
-  text-decoration: none;
-  color: white; }
-  a:hover {
-    opacity: 0.5; }
-
-nav .active {
-  font-weight: bold;
-  margin-left: 44px; }
-nav #nav-item4 {
-  margin-right: 15px; }
-nav ul {
-  margin-left: 45px;
-  align-self: center;
-  margin-top: 21px;
+.top-nav {
   display: flex;
   flex-direction: row;
-  align-items: center; }
-nav li {
-  color: #ffffff;
-  font-family: "Helvetica";
-  font-size: 0.875rem;
-  line-height: 17px;
-  letter-spacing: 0.5px;
-  margin-right: 18px; }
-
-.logo {
-  margin-left: 13px; }
-
-.custom-search {
-  position: absolute;
-  right: 52px;
-  top: 14px; }
-
-#express-form-typeahead {
-  background-color: transparent;
-  background-image: url(./../icons/lupa.svg);
-  background-position: 5px center;
-  background-repeat: no-repeat;
-  border: none;
-  color: white;
-  cursor: pointer;
-  height: 37px;
-  padding: 0 0 0 34px;
-  position: relative;
-  -webkit-transition: width 800ms ease, background 800ms ease-out;
-  transition: width 800ms ease, background 800ms ease-out;
-  width: 0; }
-
-#express-form-typeahead:focus {
-  border: 1px solid #DDDDDD;
-  background-color: #1D1C1D;
-  cursor: text;
-  outline: 0;
-  width: 268px; }
-
-.search-btn {
-  display: none; }
-
-input[type="search"] {
-  -webkit-appearance: textfield;
-  color: #ffffff; }
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  width: 100%; }
+  .top-nav:hover {
+    background-color: rgba(0, 0, 0, 0.51); }
+  .top-nav a {
+    text-decoration: none;
+    color: white; }
+    .top-nav a:hover {
+      opacity: 0.5; }
+  .top-nav nav {
+    display: flex;
+    width: 100%; }
+    .top-nav nav .active {
+      font-weight: bold;
+      margin-left: 44px; }
+    .top-nav nav #nav-item4 {
+      margin-right: 15px; }
+    .top-nav nav ul {
+      margin-left: 45px;
+      align-self: center;
+      margin-top: 21px;
+      display: flex;
+      flex-direction: row;
+      align-items: center; }
+    .top-nav nav li {
+      color: #ffffff;
+      font-family: "Helvetica";
+      font-size: 0.875rem;
+      line-height: 17px;
+      letter-spacing: 0.5px; }
+  .top-nav .logo {
+    margin-left: 13px; }
+  .top-nav #custom-search {
+    margin-left: auto;
+    margin-right: 52px;
+    margin-top: 14px; }
+  .top-nav #express-form-typeahead {
+    background-color: transparent;
+    background-image: url(./../icons/lupa.svg);
+    background-position: 5px center;
+    background-repeat: no-repeat;
+    border: none;
+    color: white;
+    cursor: pointer;
+    height: 37px;
+    padding: 0 0 0 34px;
+    position: relative;
+    -webkit-transition: width 800ms ease, background 800ms ease-out;
+    transition: width 800ms ease, background 800ms ease-out;
+    width: 0; }
+  .top-nav #express-form-typeahead:focus {
+    border: 1px solid #DDDDDD;
+    background-color: #1D1C1D;
+    cursor: text;
+    outline: 0;
+    width: 268px; }
+  .top-nav .search-btn {
+    display: none; }
+  .top-nav input[type="search"] {
+    -webkit-appearance: textfield;
+    color: #ffffff; }
 
 .row {
   display: flex;

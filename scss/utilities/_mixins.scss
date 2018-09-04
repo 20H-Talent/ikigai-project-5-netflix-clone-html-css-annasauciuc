@@ -9,7 +9,7 @@
 
 // Media Queries
 @mixin media($size) {
-    @media (min-width: $size) {
+    @media (max-width: $size) {
         @content;
     }
 }
