@@ -117,3 +117,75 @@
     position: relative;
     overflow: hidden;
 }
+
+//OVERLAY-1
+.oval-1 {
+    border-radius: 50%;
+    box-sizing: border-box;
+    height: 23.73px;
+    width: 23.72px;
+    border: 1px solid $text-color;
+    background-color: rgba(0, 0, 0, 0.51);
+}
+
+.firstspan-1 {
+   
+    @include font($size: 13px, $space: 0.2px, $line: 17px, $color: $text-color);
+}
+
+.span4-1 {
+    @include font($size: 12px, $space: 0.2px, $line: 15px, $color: $text-color);
+}
+
+.span3-1 {
+    @include font($size: 14px, $space: 0.3px, $line: 17px, $color: $text-color);
+
+    border: 1px solid rgba(255, 255, 255, 0.41);
+}
+
+.span2-1 {
+    @include font($size: 14px, $space: 0.4px, $line: 17px, $color: #46d36a);
+
+    height: 17px;
+    width: 74px;
+}
+
+.overlayp-1 {
+   
+
+    @include font($size: 11px, $line: 14px, $color: $text-color);
+}
+
+.photo-overlay-1 {
+    position: absolute;
+    bottom: 20px;
+    left: 4px;
+
+    @include flexy($dir: column);
+}
+
+.photo-overlay-1 {
+    opacity: 0;
+    transition: 0.5s;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.fa-1 {
+   height: 7.45px;	width: 8.81px;
+    color: red;
+    position: absolute;
+    top: 3px;
+    left: 7px;
+}
+
+.playicon-1 {
+    position: relative;
+}
+
+.photo-1 {
+    position: relative;
+    overflow: hidden;
+}
