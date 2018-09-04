@@ -689,6 +689,7 @@ nav li {
   width: 0; }
 
 #express-form-typeahead:focus {
+  border: 1px solid #DDDDDD;
   background-color: #1D1C1D;
   cursor: text;
   outline: 0;
