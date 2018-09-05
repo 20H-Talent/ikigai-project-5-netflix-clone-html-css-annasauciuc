@@ -132,7 +132,7 @@ progress[value="0"] {
     width: 268px; }
     @media (max-width: 500px) {
       .top-nav #express-form-typeahead:focus {
-        width: 180px;
+        width: 150px;
         height: 30px; } }
   .top-nav .search-btn {
     display: none; }
@@ -164,18 +164,17 @@ progress[value="0"] {
 
   .navbar-toggler {
     font-size: 1rem; } }
-.row {
+.row-carousel {
   display: flex;
   flex-direction: row;
   margin-bottom: 39px;
-  overflow-x: scroll;
-  width: 100%; }
-  .row .image-rows {
+  overflow-x: scroll; }
+  .row-carousel .image-rows {
     margin-right: 5px; }
-  .row image {
+  .row-carousel image {
     height: 121.69px;
     width: 216px; }
-  .row ::-webkit-scrollbar {
+  .row-carousel ::-webkit-scrollbar {
     visibility: hidden; }
 
 .main {

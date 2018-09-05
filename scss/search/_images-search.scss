@@ -1,4 +1,4 @@
-.row {
+.row-carousel {
     @include flexy($dir: row);
 
     margin-bottom: 39px;
@@ -6,7 +6,7 @@
     // overflow-x: hidden;
     // overflow-y: hidden;
     overflow-x: scroll;
-    width: 100%;
+   
 
     .image-rows {
         margin-right: 5px;

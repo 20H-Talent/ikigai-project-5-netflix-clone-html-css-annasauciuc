@@ -53,4 +53,9 @@ footer {
     .social-3 {
         padding-right: 18px;
     }
+    .social-2{
+        @include media(320px){
+            display:none;
+        }
+    }
 }

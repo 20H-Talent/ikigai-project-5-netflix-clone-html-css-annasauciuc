@@ -1,7 +1,7 @@
 .image-header {
     margin-top: 305px;
     height: 74.31px;
-    width: 100%;
+    // width: 100%;
 
     // width: 459.12px;
     margin-bottom: 28px;
@@ -9,9 +9,15 @@
 
     @include media(768px) {
         margin-left: 8%;
+        width:95%;
+        // margin-top: 21%;
     }
 }
-
+#header-img{
+    @include media(320px){
+        width:281px;
+    }
+}
 .originals-container {
     @include flexy($dir: row);
 

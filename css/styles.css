@@ -336,8 +336,8 @@ body {
   line-height: 0.7; }
 
 html.debug {
-  background: transparent url("./../movie-images/00-home-with-hovers.jpg") no-repeat top left;
-  background-size: 100%; }
+  background-size: 100%;
+  background-color: #141414; }
   html.debug body {
     opacity: 0.7; }
 
@@ -355,9 +355,12 @@ p {
   font-weight: 300;
   line-height: 25px;
   letter-spacing: 0.2px; }
-  @media (max-width: 768px) {
+  @media (max-width: 320px) {
     p {
-      margin-left: 8%; } }
+      width: 82%;
+      text-align: center;
+      margin-left: 8%;
+      margin-right: 8%; } }
 
 h3 {
   margin: 0 0 0 59px;
@@ -367,9 +370,10 @@ h3 {
   font-weight: bold;
   line-height: 26px;
   letter-spacing: 0.22px; }
-  @media (max-width: 768px) {
+  @media (max-width: 320px) {
     h3 {
-      margin-left: 8%; } }
+      margin-left: 13%;
+      margin-bottom: 5%; } }
 
 h1 {
   margin-left: 58px;
@@ -418,6 +422,9 @@ progress[value="0"] {
 .h-buttons {
   margin-left: 58px;
   margin-bottom: 13px; }
+  @media (max-width: 320px) {
+    .h-buttons {
+      display: none; } }
   .h-buttons .btn-2 {
     margin-left: 7px;
     height: 41px;
@@ -459,6 +466,9 @@ progress[value="0"] {
   padding-bottom: 6px;
   border-left: 3px solid #ffffff;
   background-color: #252928; }
+  @media (max-width: 320px) {
+    .age {
+      display: none; } }
 
 .age-icon {
   position: absolute;
@@ -472,12 +482,16 @@ button:hover {
 .image-header {
   margin-top: 305px;
   height: 74.31px;
-  width: 100%;
   margin-bottom: 28px;
   margin-left: 61px; }
   @media (max-width: 768px) {
     .image-header {
-      margin-left: 8%; } }
+      margin-left: 8%;
+      width: 95%; } }
+
+@media (max-width: 320px) {
+  #header-img {
+    width: 281px; } }
 
 .originals-container {
   display: flex;
@@ -766,7 +780,7 @@ button:hover {
     width: 268px; }
     @media (max-width: 500px) {
       .top-nav #express-form-typeahead:focus {
-        width: 180px;
+        width: 150px;
         height: 30px; } }
   .top-nav .search-btn {
     display: none; }
@@ -843,6 +857,9 @@ footer {
     padding-right: 45px; }
   footer .social-3 {
     padding-right: 18px; }
+  @media (max-width: 320px) {
+    footer .social-2 {
+      display: none; } }
 
 header {
   background: url("./../movie-images/background.svg") no-repeat top center;
