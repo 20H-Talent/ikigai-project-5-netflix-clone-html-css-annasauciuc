@@ -52,9 +52,15 @@ footer {
 
     .social-3 {
         padding-right: 18px;
+        @include media(320px){
+            padding-right: 48px;  
+        }
     }
     .social-2{
         @include media(320px){
+            display:none;
+        }
+        @include media(768px){
             display:none;
         }
     }
