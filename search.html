@@ -12,6 +12,8 @@
     <meta property="og:description" content="Cinema comes in your home" />
     <meta property="og:image" content="http://static01.nyt.com/images/2015/02/19/arts/international/19iht-btnumbers19A/19iht-btnumbers19A-facebookJumbo-v2.jpg"
     />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="./css/search.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
         crossorigin="anonymous">
@@ -35,30 +37,43 @@
             <div class="first-line">
                 <div class="top-nav">
                     <nav>
-                        
                         <div class="pos-f-t" id="nav-mobile">
                             <div class="collapse" id="navbarToggleExternalContent">
-                              <div class="transparent p-4">
-                               
-                                <a class="active" href="#home">Home</a>
-                                <a href="#about">TV Shows</a>
-                                <a href="#movies">Movies</a>
-                                <a id="nav-item3" class="recently-added" href="#recently-added">Recently
-                                    Added
-                                </a>
-                                <span class="text-muted"></span>
-                              </div>
+                                <!-- <div class="transparent p-4">
+
+                                    <a class="active" href="#home">Home</a>
+                                    <a href="#about">TV Shows</a>
+                                    <a href="#movies">Movies</a>
+                                    <a id="nav-item3" class="recently-added" href="#recently-added">Recently Added
+                                    </a>
+                                    <span class="text-muted"></span>
+                                </div> -->
+                                <ul class="nav flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Tv Shows</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Movies</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link " href="#">Recently added</a>
+                                    </li>
+
+                                </ul>
                             </div>
                             <nav class="navbar navbar-dark transparent">
-                              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                              </button>
-                              <a href="home.html"> <img class="logo" id="netflix-logo" src="icons/netflix-logo.svg" alt="Netflix
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <a href="home.html"> <img class="logo" id="netflix-logo" src="icons/netflix-logo.svg" alt="Netflix
                                 logo"></a>
                             </nav>
-                          </div>    
-
-                          <ul class="hidden">
+                        </div>
+                        <ul class="hidden">
                             <a href="home.html"> <img class="logo" id="netflix-logo" src="icons/netflix-logo.svg" alt="Netflix
                                     logo"></a>
                             <li id="nav-item1"> <a class="active" href="#home">Home</a></li>
@@ -69,13 +84,13 @@
                                 </a></li>
                             <li id="nav-item5"> <a href="#my-list">My List</a></li>
                         </ul>
-                        <div class="span3 widget-span widget-type-raw_html" id="custom-search" data-widget-type="raw_html" data-x="4" data-w="3">
+                        <div class="span8 widget-span widget-type-raw_html" id="custom-search" data-widget-type="raw_html" data-x="4" data-w="3">
                             <div class="cell-wrapper layout-widget-wrapper">
                                 <span id="hs_cos_wrapper_module_14308928327274411" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_raw_html"
                                     data-hs-cos-general-type="widget" data-hs-cos-type="raw_html"><form
                                         method="GET" action="./search.html" role="search" class="navbar-form navbar-left ng-pristine ng-valid"
                                         id="express-form" novalidate="">
-                                        <input required="" name="q" placeholder="Titles,people,genres" class="form-control tt-input" id="express-form-typeahead"
+                                     <input required="" name="q" placeholder="Titles,people,genres" class="form-controls tt-input" id="express-form-typeahead"
                                             autocomplete="off" spellcheck="false" dir="auto" type="text">
                                         <button class="search-btn" type="submit"><span class="icon"></span></button>
                                     </form>
@@ -83,6 +98,7 @@
                             </div>
                             <!--end layout-widget-wrapper -->
                         </div>
+
 
 
 
@@ -99,7 +115,7 @@
 
 
 
-        <div class="main">
+        <div class="main-carousel">
 
             <div class="scroll-3 row-carousel">
 
@@ -636,6 +652,7 @@
 
 
             </div>
+            
 
             <div class="scroll-10 row-carousel">
 
@@ -711,7 +728,9 @@
                 </div>
 
             </div>
+
         </div>
+        
 
     </div>
     <div class="footer">

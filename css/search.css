@@ -29,7 +29,8 @@ html.debug {
   background-color: #141414;
   background-size: 100%; }
   html.debug body {
-    opacity: 0.7; }
+    opacity: 0.7;
+    width: 100%; }
 
 a {
   text-decoration: none;
