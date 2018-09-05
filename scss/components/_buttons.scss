@@ -59,5 +59,6 @@
 button:hover {
     color: black;
     background-color: $text-color;
+
     @extend %transition;
 }
