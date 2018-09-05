@@ -62,7 +62,9 @@
             @include media(320px) {
                 font-size: get-vw(50px);
             }
-
+            @include media(1200px) {
+                font-size: get-vw(20px);
+            }
 
             margin-right: 18px;
 
@@ -108,13 +110,19 @@
 
     #express-form-typeahead:focus {
         border: 1px solid #DDDDDD;
-        background-color: #1D1C1D;
+        background-color: transparent;
         cursor: text;
         outline: 0;
         width: 268px;
+       
 
         @include media(320px) {
             display: none;
+        }
+        @include media(1204px) {
+            width: 200px;
+            border-radius:4px;
+            background-color: rgba(0, 0, 0, 0.51);
         }
     }
 
