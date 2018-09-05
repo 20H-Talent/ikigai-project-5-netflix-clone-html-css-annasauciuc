@@ -79,6 +79,9 @@ progress[value="0"] {
     .top-nav nav .active {
       font-weight: bold;
       margin-left: 44px; }
+      @media (max-width: 500px) {
+        .top-nav nav .active {
+          margin-left: 0; } }
     .top-nav nav #nav-item4 {
       margin-right: 17px; }
     .top-nav nav ul {
@@ -97,13 +100,16 @@ progress[value="0"] {
       letter-spacing: 0.5px; }
       @media (max-width: 320px) {
         .top-nav nav li {
-          font-size: 1.3888888889vw; } }
+          font-size: 3.4722222222vw; } }
   .top-nav .logo {
     margin-left: 14px; }
   .top-nav #custom-search {
     margin-left: auto;
     margin-right: 52px;
     margin-top: 14px; }
+    @media (max-width: 500px) {
+      .top-nav #custom-search {
+        margin-right: 20px; } }
   .top-nav #express-form-typeahead {
     background-color: transparent;
     background-image: url(./../icons/lupa.svg);
@@ -124,6 +130,10 @@ progress[value="0"] {
     cursor: text;
     outline: 0;
     width: 268px; }
+    @media (max-width: 500px) {
+      .top-nav #express-form-typeahead:focus {
+        width: 180px;
+        height: 30px; } }
   .top-nav .search-btn {
     display: none; }
   .top-nav input[type="search"] {
@@ -133,21 +143,27 @@ progress[value="0"] {
 #nav-mobile {
   display: none; }
 
-@media (max-width: 768px) {
-  #hidden:not(.logo) {
-    display: none; }
-
+@media (max-width: 500px) and (max-width: 500px) {
+  .hidden:not(#netflix-logo) {
+    display: none; } }
+@media (max-width: 500px) {
   #nav-mobile {
     display: inline-block; }
     #nav-mobile .navbar-toggler {
       color: #010316; }
     #nav-mobile button:hover {
       background-color: transparent; } }
-  @media (max-width: 768px) and (max-width: 320px) {
+  @media (max-width: 500px) and (max-width: 320px) {
     #nav-mobile a {
-      font-size: 3.4722222222vw;
+      font-size: 2.7777777778vw;
       margin-right: 15px; } }
+@media (max-width: 500px) {
+    #nav-mobile .p-4 {
+      padding-left: 1rem !important;
+      padding-top: 1rem !important; }
 
+  .navbar-toggler {
+    font-size: 1rem; } }
 .row {
   display: flex;
   flex-direction: row;

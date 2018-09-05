@@ -34,6 +34,10 @@
         .active {
             font-weight: bold;
             margin-left: 44px;
+
+            @include media(500px) {
+                margin-left: 0;
+            }
         }
 
         #nav-item4 {
@@ -50,7 +54,7 @@
 
         li {
             @include media(320px) {
-                font-size: get-vw(20px);
+                font-size: get-vw(50px);
             }
 
 
@@ -71,10 +75,9 @@
         margin-right: 52px;
         margin-top: 14px;
 
-        // @include media(768px) {
-        //     margin-right: 200px;
-        // }
-   
+        @include media(500px) {
+            margin-right: 20px;
+        }
     }
 
     #express-form-typeahead {
@@ -99,6 +102,11 @@
         cursor: text;
         outline: 0;
         width: 268px;
+
+        @include media(500px) {
+            width: 180px;
+            height: 30px;
+        }
     }
 
     .search-btn {
@@ -115,10 +123,15 @@
     display: none;
 }
 
-@media (max-width: 768px) {
-    #hidden:not(.logo) {
-        display: none;
+@include media(500px) {
+    @media (max-width: 500px) {
+        .hidden:not(#netflix-logo) {
+            display: none;
+        }
     }
+
+    // } #netflix-logo{
+    //     display:block!important;
 
     #nav-mobile {
         display: inline-block;
@@ -133,9 +146,17 @@
 
         a {
             @include media(320px) {
-                font-size: get-vw(50px);
-                margin-right:15px;
+                font-size: get-vw(40px);
+                margin-right: 15px;
             }
         }
+
+        .p-4 {
+            padding-left: 1rem !important;
+            padding-top: 1rem !important;
+        }
+    }
+    .navbar-toggler{
+        font-size: 1rem;
     }
 }

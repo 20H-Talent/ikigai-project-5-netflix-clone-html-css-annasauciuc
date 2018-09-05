@@ -332,20 +332,18 @@ ol, ul {
 body {
   color: #ffffff;
   font-family: Helvetica;
-  background-color: #141414; }
+  background-color: #141414;
+  line-height: 0.7; }
 
 html.debug {
-  background-size: 100%;
-  background-color: #141414; }
+  background: transparent url("./../movie-images/00-home-with-hovers.jpg") no-repeat top left;
+  background-size: 100%; }
   html.debug body {
     opacity: 0.7; }
 
 a {
   text-decoration: none;
   color: #ffffff; }
-
-.row a {
-  display: flex; }
 
 p {
   margin: 3px 0 0 59px;
@@ -419,16 +417,16 @@ progress[value="0"] {
 
 .h-buttons {
   margin-left: 58px;
-  margin-bottom: 15px; }
+  margin-bottom: 13px; }
   .h-buttons .btn-2 {
     margin-left: 7px;
     height: 41px;
-    width: 10.69%; }
+    width: 154px; }
   .h-buttons button {
-    padding-bottom: 4px;
+    padding-bottom: 8px;
     border: none;
     height: 41px;
-    width: 8.95%;
+    width: 129px;
     border-radius: 3px;
     background-color: rgba(51, 51, 51, 0.4);
     color: #ffffff;
@@ -438,12 +436,6 @@ progress[value="0"] {
     font-weight: bold;
     line-height: 19px;
     letter-spacing: 0.2px; }
-    @media (max-width: 768px) {
-      .h-buttons button {
-        font-size: 2.0833333333vw; } }
-    @media (max-width: 1024px) {
-      .h-buttons button {
-        font-size: 1.3888888889vw; } }
     .h-buttons button .fa-play {
       margin-right: 5px; }
     .h-buttons button .fa-plus {
@@ -492,7 +484,7 @@ button:hover {
   flex-direction: row;
   overflow-x: scroll;
   overflow-y: hidden;
-  margin-bottom: 44px;
+  margin-bottom: 47px;
   margin-left: 58px; }
   @media (max-width: 768px) {
     .originals-container {
@@ -514,7 +506,7 @@ button:hover {
   display: flex;
   flex-direction: row;
   margin-left: 60px;
-  margin-bottom: 18px;
+  margin-bottom: 25px;
   /* Hide horizontal scrollbar */
   overflow-x: scroll;
   overflow-y: hidden; }
@@ -533,10 +525,11 @@ button:hover {
   background-color: rgba(0, 0, 0, 0.51); }
 
 .firstspan {
+  margin-top: 9px;
   margin-left: 11px;
   color: #ffffff;
   font-family: "Helvetica";
-  font-size: 1.25rem;
+  font-size: 1rem;
   line-height: 19px;
   letter-spacing: 1.2px; }
 
@@ -553,18 +546,21 @@ button:hover {
   font-size: 0.875rem;
   line-height: 17px;
   letter-spacing: 0.3px;
-  border: 1px solid rgba(255, 255, 255, 0.41); }
+  border: 1px solid rgba(255, 255, 255, 0.41);
+  margin-left: 3px;
+  margin-right: 5px;
+  padding: 1px 5px 1px 4px; }
 
 .span2 {
   color: #46d36a;
   font-family: "Helvetica";
   font-size: 0.875rem;
-  line-height: 17px;
+  line-height: 30px;
   letter-spacing: 0.4px;
   width: 74px; }
 
 .overlayp {
-  width: 195px;
+  width: 196px;
   margin-left: 11px;
   color: #ffffff;
   font-family: "Helvetica";
@@ -616,24 +612,24 @@ button:hover {
   background-color: rgba(0, 0, 0, 0.51); }
 
 .firstspan-1 {
-  margin-left: 11px;
+  margin-left: 8px;
   color: #ffffff;
   font-family: "Helvetica";
-  font-size: 13px;
-  line-height: 17px;
+  font-size: 10px;
+  line-height: 11px;
   letter-spacing: 0.2px; }
 
 .span4-1 {
   color: #ffffff;
   font-family: "Helvetica";
-  font-size: 12px;
+  font-size: 8px;
   line-height: 15px;
   letter-spacing: 0.2px; }
 
 .span3-1 {
   color: #ffffff;
   font-family: "Helvetica";
-  font-size: 14px;
+  font-size: 8px;
   line-height: 17px;
   letter-spacing: 0.3px;
   border: 1px solid rgba(255, 255, 255, 0.41); }
@@ -641,25 +637,25 @@ button:hover {
 .span2-1 {
   color: #46d36a;
   font-family: "Helvetica";
-  font-size: 14px;
+  font-size: 8px;
   line-height: 17px;
   letter-spacing: 0.4px;
   height: 17px;
   width: 74px; }
 
 .overlay-row-1 {
-  margin-left: 11px; }
+  margin-left: 7px; }
 
 .overlayp-1 {
   color: #ffffff;
   font-family: "Helvetica";
-  font-size: 11px;
-  line-height: 14px;
-  margin-left: 11px; }
+  font-size: 8px;
+  line-height: 10px;
+  margin-left: 8px; }
 
 .photo-overlay-1 {
   position: absolute;
-  bottom: 20px;
+  bottom: 17px;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.6);
   height: 100%;
@@ -682,11 +678,16 @@ button:hover {
 
 .playicon-1 {
   position: relative;
-  margin-left: 11px; }
+  margin-left: 7px; }
 
 .photo-1 {
   position: relative;
   overflow: hidden; }
+
+#more-icon {
+  top: 21px;
+  position: absolute;
+  right: 7px; }
 
 .top-nav {
   display: flex;
@@ -712,6 +713,9 @@ button:hover {
     .top-nav nav .active {
       font-weight: bold;
       margin-left: 44px; }
+      @media (max-width: 500px) {
+        .top-nav nav .active {
+          margin-left: 0; } }
     .top-nav nav #nav-item4 {
       margin-right: 17px; }
     .top-nav nav ul {
@@ -730,13 +734,16 @@ button:hover {
       letter-spacing: 0.5px; }
       @media (max-width: 320px) {
         .top-nav nav li {
-          font-size: 1.3888888889vw; } }
+          font-size: 3.4722222222vw; } }
   .top-nav .logo {
     margin-left: 14px; }
   .top-nav #custom-search {
     margin-left: auto;
     margin-right: 52px;
     margin-top: 14px; }
+    @media (max-width: 500px) {
+      .top-nav #custom-search {
+        margin-right: 20px; } }
   .top-nav #express-form-typeahead {
     background-color: transparent;
     background-image: url(./../icons/lupa.svg);
@@ -757,6 +764,10 @@ button:hover {
     cursor: text;
     outline: 0;
     width: 268px; }
+    @media (max-width: 500px) {
+      .top-nav #express-form-typeahead:focus {
+        width: 180px;
+        height: 30px; } }
   .top-nav .search-btn {
     display: none; }
   .top-nav input[type="search"] {
@@ -766,26 +777,32 @@ button:hover {
 #nav-mobile {
   display: none; }
 
-@media (max-width: 768px) {
-  #hidden:not(.logo) {
-    display: none; }
-
+@media (max-width: 500px) and (max-width: 500px) {
+  .hidden:not(#netflix-logo) {
+    display: none; } }
+@media (max-width: 500px) {
   #nav-mobile {
     display: inline-block; }
     #nav-mobile .navbar-toggler {
       color: #010316; }
     #nav-mobile button:hover {
       background-color: transparent; } }
-  @media (max-width: 768px) and (max-width: 320px) {
+  @media (max-width: 500px) and (max-width: 320px) {
     #nav-mobile a {
-      font-size: 3.4722222222vw;
+      font-size: 2.7777777778vw;
       margin-right: 15px; } }
+@media (max-width: 500px) {
+    #nav-mobile .p-4 {
+      padding-left: 1rem !important;
+      padding-top: 1rem !important; }
 
+  .navbar-toggler {
+    font-size: 1rem; } }
 footer {
   height: 17%;
   width: 58.95%;
   margin-left: 15.90%;
-  margin-top: 7.7%;
+  margin-top: 8.3%;
   margin-bottom: 2.4%; }
   footer a:hover {
     text-decoration: underline; }

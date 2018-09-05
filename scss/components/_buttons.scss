@@ -1,31 +1,22 @@
 .h-buttons {
     margin-left: 58px;
-    margin-bottom: 15px;
+    margin-bottom: 13px;
 
     .btn-2 {
         margin-left: 7px;
-        height: 41px;
-        width: 10.69%;
+        	height: 41px;	width: 154px;
     }
 
     button {
-        padding-bottom: 4px;
+        padding-bottom: 8px;
         border: none;
-        height: 41px;
-        width: 8.95%;
+        height: 41px;	width: 129px;
         border-radius: 3px;
         background-color: rgba(51, 51, 51, 0.4);
         color: $text-color;
 
         @include font($size: 16px, $space: 0.2px, $line: 19px, $weight: bold, $color: $text-color);
-        @include media(768px) {
-            font-size: get-vw(30px);
-        }
-    
-    
-        @include media(1024px) {
-            font-size: get-vw(20px);
-        }
+       
         .fa-play {
             margin-right: 5px;
         }
