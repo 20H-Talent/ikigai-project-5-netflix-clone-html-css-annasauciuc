@@ -1,11 +1,14 @@
 .image-header {
-    margin-top: 255px;
+    margin-top: 305px;
     height: 74.31px;
     width: 100%;
 
     // width: 459.12px;
     margin-bottom: 28px;
     margin-left: 61px;
+    @include media(768px){
+        margin-left:8%;
+    }
 }
 
 .originals-container {
@@ -15,6 +18,9 @@
     overflow-y: hidden;
     margin-bottom: 44px;
     margin-left: 58px;
+    @include media(768px){
+        margin-left:8%;
+    }
 }
 
 ::-webkit-scrollbar {
@@ -24,6 +30,9 @@
 .image-rows {
     margin-right: 5px;
     opacity: 1;
+    @include media(1204px){
+        // width:100%;
+    }
 
     &:hover {
         // opacity: 0.3;
@@ -32,9 +41,10 @@
         -webkit-transition: opacity 0.2s ease-out;
         -o-transition: opacity 0.2s ease-out;
     }
+    
 }
 
-.row {
+.row-carousel {
     @include flexy($dir: row);
 
     margin-left: 60px;
@@ -43,6 +53,9 @@
     /* Hide horizontal scrollbar */
     overflow-x: scroll;
     overflow-y: hidden;
+    @include media(768px){
+        margin-left:8%;
+    }
 
     image {
         width: 100%;

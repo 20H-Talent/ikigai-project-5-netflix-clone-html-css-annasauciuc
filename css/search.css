@@ -64,6 +64,10 @@ progress[value="0"] {
   width: 100%; }
   .top-nav:hover {
     background-color: rgba(0, 0, 0, 0.51); }
+  @media (max-width: 500px) {
+    .top-nav {
+      display: flex;
+      flex-direction: column; } }
   .top-nav a {
     text-decoration: none;
     color: white; }
@@ -76,22 +80,26 @@ progress[value="0"] {
       font-weight: bold;
       margin-left: 44px; }
     .top-nav nav #nav-item4 {
-      margin-right: 15px; }
+      margin-right: 17px; }
     .top-nav nav ul {
       margin-left: 45px;
       align-self: center;
-      margin-top: 21px;
+      margin-top: 18px;
       display: flex;
       flex-direction: row;
       align-items: center; }
     .top-nav nav li {
+      margin-right: 18px;
       color: #ffffff;
       font-family: "Helvetica";
       font-size: 0.875rem;
       line-height: 17px;
       letter-spacing: 0.5px; }
+      @media (max-width: 320px) {
+        .top-nav nav li {
+          font-size: 1.3888888889vw; } }
   .top-nav .logo {
-    margin-left: 13px; }
+    margin-left: 14px; }
   .top-nav #custom-search {
     margin-left: auto;
     margin-right: 52px;
@@ -121,6 +129,24 @@ progress[value="0"] {
   .top-nav input[type="search"] {
     -webkit-appearance: textfield;
     color: #ffffff; }
+
+#nav-mobile {
+  display: none; }
+
+@media (max-width: 768px) {
+  #hidden:not(.logo) {
+    display: none; }
+
+  #nav-mobile {
+    display: inline-block; }
+    #nav-mobile .navbar-toggler {
+      color: #010316; }
+    #nav-mobile button:hover {
+      background-color: transparent; } }
+  @media (max-width: 768px) and (max-width: 320px) {
+    #nav-mobile a {
+      font-size: 3.4722222222vw;
+      margin-right: 15px; } }
 
 .row {
   display: flex;

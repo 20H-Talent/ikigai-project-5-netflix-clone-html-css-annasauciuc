@@ -1,14 +1,16 @@
 footer {
-    height: 246px;
-    width: 849px;
-    margin-left: 229px;
-    margin-top: 111px;
-    margin-bottom: 35px;
+    height: 17%;
+    width: 58.95%;
+    margin-left: 15.90%;
+    margin-top: 7.7%;
+    margin-bottom: 2.4%;
 
     a:hover {
         text-decoration: underline;
     }
-
+    @include media(768px){
+        margin-left:8%;
+    }
     img:not(#tweet) {
         margin-right: 26px;
     }

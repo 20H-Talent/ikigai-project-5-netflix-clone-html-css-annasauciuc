@@ -335,7 +335,8 @@ body {
   background-color: #141414; }
 
 html.debug {
-  background-size: 100%; }
+  background-size: 100%;
+  background-color: #141414; }
   html.debug body {
     opacity: 0.7; }
 
@@ -356,6 +357,9 @@ p {
   font-weight: 300;
   line-height: 25px;
   letter-spacing: 0.2px; }
+  @media (max-width: 768px) {
+    p {
+      margin-left: 8%; } }
 
 h3 {
   margin: 0 0 0 59px;
@@ -365,6 +369,9 @@ h3 {
   font-weight: bold;
   line-height: 26px;
   letter-spacing: 0.22px; }
+  @media (max-width: 768px) {
+    h3 {
+      margin-left: 8%; } }
 
 h1 {
   margin-left: 58px;
@@ -376,6 +383,9 @@ h1 {
   font-weight: bold;
   line-height: 24px;
   letter-spacing: 0.16px; }
+  @media (max-width: 768px) {
+    h1 {
+      margin-left: 8%; } }
 
 h2 {
   margin-bottom: 10px;
@@ -387,6 +397,9 @@ h2 {
   font-weight: bold;
   line-height: 24px;
   letter-spacing: 0.16px; }
+  @media (max-width: 768px) {
+    h2 {
+      margin-left: 8%; } }
 
 .first-line {
   margin-bottom: -50px; }
@@ -410,12 +423,12 @@ progress[value="0"] {
   .h-buttons .btn-2 {
     margin-left: 7px;
     height: 41px;
-    width: 154px; }
+    width: 10.69%; }
   .h-buttons button {
     padding-bottom: 4px;
     border: none;
     height: 41px;
-    width: 129px;
+    width: 8.95%;
     border-radius: 3px;
     background-color: rgba(51, 51, 51, 0.4);
     color: #ffffff;
@@ -425,6 +438,12 @@ progress[value="0"] {
     font-weight: bold;
     line-height: 19px;
     letter-spacing: 0.2px; }
+    @media (max-width: 768px) {
+      .h-buttons button {
+        font-size: 2.0833333333vw; } }
+    @media (max-width: 1024px) {
+      .h-buttons button {
+        font-size: 1.3888888889vw; } }
     .h-buttons button .fa-play {
       margin-right: 5px; }
     .h-buttons button .fa-plus {
@@ -459,11 +478,14 @@ button:hover {
   background-color: #ffffff; }
 
 .image-header {
-  margin-top: 255px;
+  margin-top: 305px;
   height: 74.31px;
   width: 100%;
   margin-bottom: 28px;
   margin-left: 61px; }
+  @media (max-width: 768px) {
+    .image-header {
+      margin-left: 8%; } }
 
 .originals-container {
   display: flex;
@@ -472,6 +494,9 @@ button:hover {
   overflow-y: hidden;
   margin-bottom: 44px;
   margin-left: 58px; }
+  @media (max-width: 768px) {
+    .originals-container {
+      margin-left: 8%; } }
 
 ::-webkit-scrollbar {
   visibility: hidden; }
@@ -485,7 +510,7 @@ button:hover {
     -webkit-transition: opacity 0.2s ease-out;
     -o-transition: opacity 0.2s ease-out; }
 
-.row {
+.row-carousel {
   display: flex;
   flex-direction: row;
   margin-left: 60px;
@@ -493,7 +518,10 @@ button:hover {
   /* Hide horizontal scrollbar */
   overflow-x: scroll;
   overflow-y: hidden; }
-  .row image {
+  @media (max-width: 768px) {
+    .row-carousel {
+      margin-left: 8%; } }
+  .row-carousel image {
     width: 100%; }
 
 .oval {
@@ -669,6 +697,10 @@ button:hover {
   width: 100%; }
   .top-nav:hover {
     background-color: rgba(0, 0, 0, 0.51); }
+  @media (max-width: 500px) {
+    .top-nav {
+      display: flex;
+      flex-direction: column; } }
   .top-nav a {
     text-decoration: none;
     color: white; }
@@ -681,22 +713,26 @@ button:hover {
       font-weight: bold;
       margin-left: 44px; }
     .top-nav nav #nav-item4 {
-      margin-right: 15px; }
+      margin-right: 17px; }
     .top-nav nav ul {
       margin-left: 45px;
       align-self: center;
-      margin-top: 21px;
+      margin-top: 18px;
       display: flex;
       flex-direction: row;
       align-items: center; }
     .top-nav nav li {
+      margin-right: 18px;
       color: #ffffff;
       font-family: "Helvetica";
       font-size: 0.875rem;
       line-height: 17px;
       letter-spacing: 0.5px; }
+      @media (max-width: 320px) {
+        .top-nav nav li {
+          font-size: 1.3888888889vw; } }
   .top-nav .logo {
-    margin-left: 13px; }
+    margin-left: 14px; }
   .top-nav #custom-search {
     margin-left: auto;
     margin-right: 52px;
@@ -727,14 +763,35 @@ button:hover {
     -webkit-appearance: textfield;
     color: #ffffff; }
 
+#nav-mobile {
+  display: none; }
+
+@media (max-width: 768px) {
+  #hidden:not(.logo) {
+    display: none; }
+
+  #nav-mobile {
+    display: inline-block; }
+    #nav-mobile .navbar-toggler {
+      color: #010316; }
+    #nav-mobile button:hover {
+      background-color: transparent; } }
+  @media (max-width: 768px) and (max-width: 320px) {
+    #nav-mobile a {
+      font-size: 3.4722222222vw;
+      margin-right: 15px; } }
+
 footer {
-  height: 246px;
-  width: 849px;
-  margin-left: 229px;
-  margin-top: 111px;
-  margin-bottom: 35px; }
+  height: 17%;
+  width: 58.95%;
+  margin-left: 15.90%;
+  margin-top: 7.7%;
+  margin-bottom: 2.4%; }
   footer a:hover {
     text-decoration: underline; }
+  @media (max-width: 768px) {
+    footer {
+      margin-left: 8%; } }
   footer img:not(#tweet) {
     margin-right: 26px; }
   footer #tweet {
