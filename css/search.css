@@ -103,12 +103,10 @@ progress[value="0"] {
       font-size: 0.875rem;
       line-height: 17px;
       letter-spacing: 0.5px; }
-      @media (max-width: 320px) {
-        .top-nav nav li {
-          font-size: 3.4722222222vw; } }
-      @media (max-width: 1200px) {
-        .top-nav nav li {
-          font-size: 1.3888888889vw; } }
+@media (max-width: 320px) and (max-width: 500px) {
+  .top-nav nav li {
+    font-size: 3.4722222222vw; } }
+
   .top-nav .logo {
     margin-left: 14px; }
     @media (max-width: 320px) {
@@ -135,15 +133,15 @@ progress[value="0"] {
     -webkit-transition: width 800ms ease, background 800ms ease-out;
     transition: width 800ms ease, background 800ms ease-out;
     width: 0; }
+    @media (max-width: 320px) {
+      .top-nav #express-form-typeahead {
+        display: none; } }
   .top-nav #express-form-typeahead:focus {
     border: 1px solid #DDDDDD;
     background-color: transparent;
     cursor: text;
     outline: 0;
     width: 268px; }
-    @media (max-width: 320px) {
-      .top-nav #express-form-typeahead:focus {
-        display: none; } }
     @media (max-width: 1204px) {
       .top-nav #express-form-typeahead:focus {
         width: 200px;

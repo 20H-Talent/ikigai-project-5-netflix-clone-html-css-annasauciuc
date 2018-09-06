@@ -12,6 +12,7 @@ footer {
 
     img {
         @extend %transition-all;
+
         &:hover {
             transform: scale(1);
         }
