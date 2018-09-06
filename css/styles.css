@@ -340,7 +340,7 @@ body {
   color: #ffffff;
   font-family: Helvetica;
   background-color: #141414;
-  line-height: 0.7; }
+  line-height: 0.6; }
 
 html.debug {
   background: transparent url("./../movie-images/00-home-with-hovers.jpg") no-repeat top left;
@@ -485,7 +485,7 @@ button:hover {
 .image-header {
   margin-top: 305px;
   height: 74.31px;
-  margin-bottom: 28px;
+  margin-bottom: 26px;
   margin-left: 61px; }
   @media (max-width: 768px) {
     .image-header {
@@ -501,7 +501,7 @@ button:hover {
   flex-direction: row;
   overflow-x: scroll;
   overflow-y: hidden;
-  margin-bottom: 51px;
+  margin-bottom: 47px;
   margin-left: 58px; }
   @media (max-width: 768px) {
     .originals-container {
@@ -523,7 +523,7 @@ button:hover {
   display: flex;
   flex-direction: row;
   margin-left: 60px;
-  margin-bottom: 27px;
+  margin-bottom: 26px;
   /* Hide horizontal scrollbar */
   overflow-x: scroll;
   overflow-y: hidden; }
@@ -847,7 +847,7 @@ footer {
   footer #tweet {
     margin-right: 18px; }
   footer #copyright {
-    margin-top: 61px;
+    margin-top: 64px;
     margin-left: 0;
     height: 17px;
     width: 116px;
