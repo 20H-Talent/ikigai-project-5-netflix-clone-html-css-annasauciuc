@@ -23,7 +23,7 @@
 
     overflow-x: scroll;
     overflow-y: hidden;
-    margin-bottom: 47px;
+    margin-bottom: 50px;
     margin-left: 58px;
 
     @include media(768px) {
@@ -57,7 +57,7 @@
     @include flexy($dir: row);
 
     margin-left: 60px;
-    margin-bottom: 26px;
+    margin-bottom: 29px;
 
     /* Hide horizontal scrollbar */
     overflow-x: scroll;
