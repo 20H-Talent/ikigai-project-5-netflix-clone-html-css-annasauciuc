@@ -195,26 +195,26 @@ progress[value="0"] {
   .row-carousel ::-webkit-scrollbar {
     visibility: hidden; }
 
-.main {
+.main-carousel {
   margin-left: 58px; }
-  .main .scroll-3 {
+  .main-carousel .scroll-3 {
     margin-left: 5px; }
-  .main .scroll-4 {
+  .main-carousel .scroll-4 {
     margin-top: -3px;
     margin-left: 3px; }
-  .main .scroll-5 {
+  .main-carousel .scroll-5 {
     margin-top: 41px;
     margin-left: 2px; }
-  .main .scroll-6 {
+  .main-carousel .scroll-6 {
     margin-left: 2px;
     margin-top: 41px; }
-  .main .scroll-7 {
+  .main-carousel .scroll-7 {
     margin-left: 3px; }
-  .main .scroll-8 {
+  .main-carousel .scroll-8 {
     margin-top: -3px; }
-  .main .scroll-9 {
+  .main-carousel .scroll-9 {
     margin-top: 41px; }
-  .main .scroll-10 {
+  .main-carousel .scroll-10 {
     margin-top: 40px; }
 
 footer {
