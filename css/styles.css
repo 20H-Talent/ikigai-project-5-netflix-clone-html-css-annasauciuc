@@ -343,7 +343,6 @@ body {
   line-height: 0.6; }
 
 html.debug {
-  background: transparent url("./../movie-images/00-home-with-hovers.jpg") no-repeat top left;
   background-size: 100%;
   background-color: #141414; }
   html.debug body {
@@ -451,6 +450,10 @@ progress[value="0"] {
     font-weight: bold;
     line-height: 19px;
     letter-spacing: 0.2px; }
+    @media (max-width: 1200px) {
+      .h-buttons button {
+        font-size: 1.3888888889vw;
+        padding-bottom: 0%; } }
     .h-buttons button .fa-play {
       margin-right: 5px; }
     .h-buttons button .fa-plus {
