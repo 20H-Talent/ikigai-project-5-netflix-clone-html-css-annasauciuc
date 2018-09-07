@@ -4,7 +4,7 @@ progress[value], progress::-webkit-progress-value {
   appearance: none;
   border: none; }
 
-button:hover, .top-nav a:hover {
+.h-buttons button:hover, .top-nav a:hover {
   -webkit-transition: background-color 2s ease-in;
   -moz-transition: background-color 2s ease-in;
   -o-transition: background-color 2s ease-in;
@@ -343,14 +343,19 @@ body {
   line-height: 0.6; }
 
 html.debug {
+  background: transparent url("./../movie-images/00-home.jpg") no-repeat top left;
   background-size: 100%;
   background-color: #141414; }
   html.debug body {
     opacity: 0.7; }
+    html.debug body a {
+      text-decoration: none;
+      color: #ffffff; }
 
-a {
-  text-decoration: none;
-  color: #ffffff; }
+main {
+  overflow: -moz-scrollbars-none; }
+  main ::-webkit-scrollbar {
+    visibility: hidden; }
 
 p {
   margin: 3px 0 0 59px;
@@ -444,12 +449,14 @@ progress[value="0"] {
     border-radius: 3px;
     background-color: rgba(51, 51, 51, 0.4);
     color: #ffffff;
-    color: #ffffff;
     font-family: "Helvetica";
     font-size: 16px;
     font-weight: bold;
     line-height: 19px;
     letter-spacing: 0.2px; }
+    .h-buttons button:hover {
+      color: black;
+      background-color: #ffffff; }
     @media (max-width: 1200px) {
       .h-buttons button {
         font-size: 1.3888888889vw;
@@ -481,14 +488,10 @@ progress[value="0"] {
   right: 0;
   top: 512px; }
 
-button:hover {
-  color: black;
-  background-color: #ffffff; }
-
 .image-header {
   margin-top: 305px;
   height: 74.31px;
-  margin-bottom: 26px;
+  margin-bottom: 27px;
   margin-left: 61px; }
   @media (max-width: 768px) {
     .image-header {
@@ -504,37 +507,30 @@ button:hover {
   flex-direction: row;
   overflow-x: scroll;
   overflow-y: hidden;
-  margin-bottom: 50px;
+  margin-bottom: 47px;
   margin-left: 58px; }
   @media (max-width: 768px) {
     .originals-container {
       margin-left: 8%; } }
 
-::-webkit-scrollbar {
-  visibility: hidden; }
-
 .image-rows {
   margin-right: 5px;
   opacity: 1; }
-  .image-rows:hover {
-    transition: opacity 0.2s ease-out;
-    -moz-transition: opacity 0.2s ease-out;
-    -webkit-transition: opacity 0.2s ease-out;
-    -o-transition: opacity 0.2s ease-out; }
 
 .row-carousel {
   display: flex;
   flex-direction: row;
   margin-left: 60px;
-  margin-bottom: 29px;
+  margin-bottom: 26px;
+  overflow: -moz-scrollbars-none;
   /* Hide horizontal scrollbar */
   overflow-x: scroll;
   overflow-y: hidden; }
   @media (max-width: 768px) {
     .row-carousel {
       margin-left: 8%; } }
-  .row-carousel image {
-    width: 100%; }
+  .row-carousel ::-webkit-scrollbar {
+    visibility: hidden; }
 
 .oval {
   border-radius: 50%;
@@ -704,7 +700,7 @@ button:hover {
   position: relative;
   overflow: hidden; }
 
-#more-icon {
+.more-icon {
   top: 21px;
   position: absolute;
   right: 7px; }
@@ -836,7 +832,7 @@ footer {
   height: 17%;
   width: 58.95%;
   margin-left: 15.90%;
-  margin-top: 8.3%;
+  margin-top: 8.4%;
   margin-bottom: 2.4%; }
   @media (max-width: 768px) {
     footer {
@@ -877,25 +873,25 @@ footer {
       footer .footer-list a:hover {
         text-decoration: none;
         color: #ffffff; }
-    footer .footer-list a:before {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 2px;
-      bottom: -5px;
-      left: 0;
-      background-color: #eaf1f1;
-      visibility: hidden;
-      -webkit-transform: scaleX(0);
-      transform: scaleX(0);
-      -webkit-transition: all 0.4s ease-in-out 0s;
-      transition: all 0.4s ease-in-out 0s; }
-    footer .footer-list a:hover:before {
-      color: #ffffff;
-      text-decoration: none;
-      visibility: visible;
-      -webkit-transform: scaleX(1);
-      transform: scaleX(1); }
+      footer .footer-list a:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: -5px;
+        left: 0;
+        background-color: #eaf1f1;
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all 0.4s ease-in-out 0s;
+        transition: all 0.4s ease-in-out 0s; }
+        footer .footer-list a:before:hover:before {
+          color: #ffffff;
+          text-decoration: none;
+          visibility: visible;
+          -webkit-transform: scaleX(1);
+          transform: scaleX(1); }
   footer .social-1 {
     display: flex;
     flex-direction: row; }

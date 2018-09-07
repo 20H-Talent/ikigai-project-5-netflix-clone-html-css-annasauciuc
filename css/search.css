@@ -190,11 +190,12 @@ progress[value="0"] {
   .row-carousel image {
     height: 121.69px;
     width: 216px; }
-  .row-carousel ::-webkit-scrollbar {
-    visibility: hidden; }
 
 .main-carousel {
+  overflow: -moz-scrollbars-none;
   margin-left: 58px; }
+  .main-carousel ::-webkit-scrollbar {
+    visibility: hidden; }
   .main-carousel .scroll-3 {
     margin-left: 5px; }
   .main-carousel .scroll-4 {

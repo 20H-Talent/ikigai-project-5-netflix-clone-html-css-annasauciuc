@@ -20,14 +20,21 @@
         width: 8.95%;
         border-radius: 3px;
         background-color: rgba(51, 51, 51, 0.4);
-        color: $text-color;
+
+        &:hover {
+            color: black;
+            background-color: $text-color;
+
+            @extend %transition;
+        }
 
         @include font($size: 16px, $space: 0.2px, $line: 19px, $weight: bold, $color: $text-color);
-         @include media(1200px) {
-              font-size: get-vw(20px);
-             padding-bottom: 0%;
-         }
-        
+        @include media(1200px) {
+            font-size: get-vw(20px);
+            padding-bottom: 0%;
+        }
+
+
         .fa-play {
             margin-right: 5px;
         }
@@ -58,11 +65,4 @@
     position: absolute;
     right: 0;
     top: 512px;
-}
-
-button:hover {
-    color: black;
-    background-color: $text-color;
-
-    @extend %transition;
 }
