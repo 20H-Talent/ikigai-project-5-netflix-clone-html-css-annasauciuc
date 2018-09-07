@@ -343,7 +343,6 @@ body {
   line-height: 0.6; }
 
 html.debug {
-  background: transparent url("./../movie-images/00-home.jpg") no-repeat top left;
   background-size: 100%;
   background-color: #141414; }
   html.debug body {
@@ -671,7 +670,7 @@ progress[value="0"] {
 
 .photo-overlay-1 {
   position: absolute;
-  bottom: 17px;
+  bottom: 10px;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.6);
   height: 100%;
@@ -694,7 +693,8 @@ progress[value="0"] {
 
 .playicon-1 {
   position: relative;
-  margin-left: 7px; }
+  margin-left: 7px;
+  margin-bottom: 5px; }
 
 .photo-1 {
   position: relative;
