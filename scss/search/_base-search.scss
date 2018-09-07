@@ -13,7 +13,7 @@ body {
 }
 
 html.debug {
-    //  background: transparent url("./../movie-images/01-search.jpg") no-repeat top left;
+      background: transparent url("./../movie-images/01-search.jpg") no-repeat top left;
 
     background-color: $background-body;
     background-size: 100%;
@@ -36,7 +36,7 @@ a {
 }
 
 .first-line {
-    margin-bottom: 95px;
+    margin-bottom: 145px;
 }
 
 progress[value] {

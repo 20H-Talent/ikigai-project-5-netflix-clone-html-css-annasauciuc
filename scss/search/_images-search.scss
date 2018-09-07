@@ -1,7 +1,7 @@
 .row-carousel {
     @include flexy($dir: row);
 
-    margin-bottom: 39px;
+    margin-bottom: 16px;
     overflow-x: scroll;
     overflow-y: hidden;
 
@@ -29,18 +29,18 @@
     }
 
     .scroll-4 {
-        margin-top: -3px;
+     
         margin-left: 3px;
     }
 
     .scroll-5 {
-        margin-top: 41px;
+       
         margin-left: 2px;
     }
 
     .scroll-6 {
         margin-left: 2px;
-        margin-top: 41px;
+      
     }
 
     .scroll-7 {
@@ -48,14 +48,14 @@
     }
 
     .scroll-8 {
-        margin-top: -3px;
+      
     }
 
     .scroll-9 {
-        margin-top: 41px;
+       
     }
 
     .scroll-10 {
-        margin-top: 40px;
+       
     }
 }
