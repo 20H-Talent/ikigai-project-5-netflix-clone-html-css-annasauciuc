@@ -70,7 +70,6 @@
             //     font-size: get-vw(18px);
             // }
 
-
             margin-right: 18px;
 
             @include font($size: 0.875rem, $space: 0.5px, $line: 17px, $color: $text-color);
@@ -87,8 +86,6 @@
 
     #custom-search {
         margin-left: auto;
-
-        // position: absolute;
         margin-right: 52px;
         margin-top: 14px;
 
@@ -111,8 +108,9 @@
         -webkit-transition: width 800ms ease, background 800ms ease-out;
         transition: width 800ms ease, background 800ms ease-out;
         width: 0;
-          @include media(320px) {
-             display: none;
+
+        @include media(320px) {
+            display: none;
         }
     }
 
@@ -126,7 +124,6 @@
         // @include media(320px) {
         //     display: none;
         // }
-
 
         @include media(1204px) {
             width: 200px;

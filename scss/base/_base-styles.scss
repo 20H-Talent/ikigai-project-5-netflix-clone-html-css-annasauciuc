@@ -100,14 +100,14 @@ progress[value] {
     height: 4px;
     width: 132px;
     margin-left: 44px;
-    background-color: red;
+    background-color:$red;
 }
 
 progress::-webkit-progress-value {
     @extend %appearence;
 
-    color: red;
-    background-color: red;
+    color:$red;
+    background-color:$red;
 }
 
 progress[value="0"] {
