@@ -146,8 +146,8 @@
     display: none;
 }
 
-@include media(500px) {
-    @media (max-width: 500px) {
+@include media(800px) {
+    @media (max-width: 800px) {
         .hidden:not(#netflix-logo) {
             display: none;
         }

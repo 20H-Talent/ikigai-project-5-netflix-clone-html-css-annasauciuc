@@ -433,7 +433,7 @@ progress[value="0"] {
 .h-buttons {
   margin-left: 58px;
   margin-bottom: 13px; }
-  @media (max-width: 320px) {
+  @media (max-width: 520px) {
     .h-buttons {
       display: none; } }
   .h-buttons .btn-2 {
@@ -805,20 +805,20 @@ progress[value="0"] {
 #nav-mobile {
   display: none; }
 
-@media (max-width: 500px) and (max-width: 500px) {
+@media (max-width: 800px) and (max-width: 800px) {
   .hidden:not(#netflix-logo) {
     display: none; } }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   #nav-mobile {
     display: block; }
     #nav-mobile .navbar-toggler {
       color: #010316; }
     #nav-mobile button:hover {
       background-color: transparent; } }
-  @media (max-width: 500px) and (max-width: 320px) {
+  @media (max-width: 800px) and (max-width: 320px) {
     #nav-mobile a {
       margin-right: 15px; } }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
     #nav-mobile .p-4 {
       padding-left: 1rem !important;
       padding-top: 1rem !important; }
